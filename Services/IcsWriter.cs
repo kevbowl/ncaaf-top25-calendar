@@ -21,7 +21,7 @@ namespace NcaafTop25Calendar.Services
             };
             // Friendly calendar name and description for clients like Google/Apple
             calendar.Properties.Add(new CalendarProperty("X-WR-CALNAME", "College Football Top 25"));
-            calendar.Properties.Add(new CalendarProperty("X-WR-CALDESC", "Upcoming Top 25 NCAA Football games (next 4 weeks)."));
+            calendar.Properties.Add(new CalendarProperty("X-WR-CALDESC", "Upcoming Top 25 NCAA Football games (next 3 weeks)."));
             foreach (var g in games)
             {
                 var ev = new CalendarEvent

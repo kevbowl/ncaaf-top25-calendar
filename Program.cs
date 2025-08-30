@@ -7,7 +7,7 @@ try
     var initial = await espn.GetInitialScoreboardAsync();
     int seasonYear = EspnClient.TryGetSeasonYear(initial);
     int currentWeek = EspnClient.TryGetCurrentWeek(initial);
-    var weeks = EspnClient.GetNextWeeks(initial, DateTimeOffset.UtcNow, 4, currentWeek);
+    var weeks = EspnClient.GetNextWeeks(initial, DateTimeOffset.UtcNow, 3, currentWeek);
 
     var games = new List<Game>();
     foreach (var wk in weeks)
@@ -16,7 +16,7 @@ try
         games.AddRange(GameMapper.MapTop25Upcoming(weekDoc, DateTimeOffset.UtcNow));
     }
 
-    string output = Path.Combine(Directory.GetCurrentDirectory(), "top25-ncaaf-next4weeks.ics");
+    string output = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf-next4weeks.ics");
     IcsWriter.Write(output, games);
     Console.WriteLine($"Generated {output} with {games.Count} events.");
 }

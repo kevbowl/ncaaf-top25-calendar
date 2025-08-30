@@ -1,6 +1,6 @@
 # College Football Top 25 Calendar
 
-Generates an iCal (.ics) with upcoming Top-25 NCAA Football matchups for the next 4 weeks using ESPN's scoreboard API.
+Generates an iCal (.ics) with upcoming Top-25 NCAA Football matchups for the next 3 weeks using ESPN's scoreboard API.
 
 - API: `https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard`
 - Community reference: [pseudo-r/Public-ESPN-API](https://github.com/pseudo-r/Public-ESPN-API)
