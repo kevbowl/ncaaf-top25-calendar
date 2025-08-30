@@ -25,12 +25,12 @@ try
 
     // Generate regular Top 25 calendar
     string output = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf.ics");
-    IcsWriter.Write(output, allGames);
+    IcsWriter.Write(output, allGames, "College Football Top 25");
     Console.WriteLine($"Generated {output} with {allGames.Count} events.");
 
     // Generate H2H calendar
     string h2hOutput = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf-h2h.ics");
-    IcsWriter.Write(h2hOutput, h2hGames);
+    IcsWriter.Write(h2hOutput, h2hGames, "College Football Top25 H2H");
     Console.WriteLine($"Generated {h2hOutput} with {h2hGames.Count} H2H events.");
 }
 catch (Exception ex)
