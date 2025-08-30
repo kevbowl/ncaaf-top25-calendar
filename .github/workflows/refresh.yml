@@ -33,12 +33,12 @@ jobs:
         run: dotnet run
       - name: Commit changes if any
         run: |
-          if git diff --quiet docs/top25-ncaaf-next4weeks.ics; then
+          if git diff --quiet docs/top25-ncaaf.ics; then
             echo "No changes to commit"
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add docs/top25-ncaaf-next4weeks.ics
+            git add docs/top25-ncaaf.ics
             git commit -m "chore: refresh ICS [skip ci]"
             git push
           fi
