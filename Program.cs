@@ -9,16 +9,29 @@ try
     int currentWeek = EspnClient.TryGetCurrentWeek(initial);
     var weeks = EspnClient.GetNextWeeks(initial, DateTimeOffset.UtcNow, 3, currentWeek);
 
-    var games = new List<Game>();
+    var allGames = new List<Game>();
+    var h2hGames = new List<Game>();
+    
     foreach (var wk in weeks)
     {
         var weekDoc = await espn.GetWeekScoreboardAsync(seasonYear, wk);
-        games.AddRange(GameMapper.MapTop25Upcoming(weekDoc, DateTimeOffset.UtcNow));
+        var weekGames = GameMapper.MapTop25Upcoming(weekDoc, DateTimeOffset.UtcNow).ToList();
+        allGames.AddRange(weekGames);
+        
+        // Also collect H2H games (both teams must be Top 25)
+        var weekH2H = GameMapper.MapTop25HeadToHead(weekDoc, DateTimeOffset.UtcNow).ToList();
+        h2hGames.AddRange(weekH2H);
     }
 
+    // Generate regular Top 25 calendar
     string output = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf.ics");
-    IcsWriter.Write(output, games);
-    Console.WriteLine($"Generated {output} with {games.Count} events.");
+    IcsWriter.Write(output, allGames);
+    Console.WriteLine($"Generated {output} with {allGames.Count} events.");
+
+    // Generate H2H calendar
+    string h2hOutput = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf-h2h.ics");
+    IcsWriter.Write(h2hOutput, h2hGames);
+    Console.WriteLine($"Generated {h2hOutput} with {h2hGames.Count} H2H events.");
 }
 catch (Exception ex)
 {

@@ -44,6 +44,13 @@ namespace NcaafTop25Calendar.Services
                 var tv = GetTv(comp);
                 var url = TryGetSummaryUrl(ev);
 
+                // Extract score and game status information
+                var homeScore = TryGetScore(home);
+                var awayScore = TryGetScore(away);
+                var gameStatus = GetGameStatus(ev);
+                var quarter = GetQuarter(ev);
+                var timeRemaining = GetTimeRemaining(ev);
+
                 yield return new Game
                 {
                     Id = id,
@@ -51,11 +58,82 @@ namespace NcaafTop25Calendar.Services
                     EndUtc = start.Value.AddHours(3),
                     HomeTeam = homeName,
                     HomeRank = homeRank,
+                    HomeScore = homeScore,
                     AwayTeam = awayName,
                     AwayRank = awayRank,
+                    AwayScore = awayScore,
                     Location = location,
                     TvProvider = tv,
-                    Url = url
+                    Url = url,
+                    Status = gameStatus,
+                    Quarter = quarter,
+                    TimeRemaining = timeRemaining
+                };
+            }
+        }
+
+        public static IEnumerable<Game> MapTop25HeadToHead(JsonDocument weekDoc, DateTimeOffset nowUtc)
+        {
+            if (!weekDoc.RootElement.TryGetProperty("events", out var events) || events.ValueKind != JsonValueKind.Array)
+            {
+                yield break;
+            }
+
+            var seen = new HashSet<string>();
+            foreach (var ev in events.EnumerateArray())
+            {
+                string id = ev.TryGetProperty("id", out var idEl) ? idEl.GetString() ?? string.Empty : string.Empty;
+                if (string.IsNullOrEmpty(id) || !seen.Add(id)) continue;
+
+                DateTimeOffset? start = ev.TryGetProperty("date", out var d) && d.ValueKind == JsonValueKind.String && DateTimeOffset.TryParse(d.GetString(), out var dto) ? dto : null;
+                if (start == null || start.Value <= nowUtc) continue;
+
+                if (!ev.TryGetProperty("competitions", out var comps) || comps.ValueKind != JsonValueKind.Array || comps.GetArrayLength() == 0) continue;
+                var comp = comps[0];
+
+                if (!comp.TryGetProperty("competitors", out var competitors) || competitors.ValueKind != JsonValueKind.Array || competitors.GetArrayLength() < 2) continue;
+
+                var home = FindByHomeAway(competitors, "home") ?? competitors[0];
+                var away = FindByHomeAway(competitors, "away") ?? competitors[1];
+
+                int? homeRank = NormalizeRank(TryGetRank(home));
+                int? awayRank = NormalizeRank(TryGetRank(away));
+                
+                // Both teams must be ranked in top 25 for H2H
+                bool isHeadToHead = (homeRank is >= 1 and <= 25) && (awayRank is >= 1 and <= 25);
+                if (!isHeadToHead) continue;
+
+                string homeName = GetTeamName(home) ?? "Home";
+                string awayName = GetTeamName(away) ?? "Away";
+
+                var location = BuildLocation(comp);
+                var tv = GetTv(comp);
+                var url = TryGetSummaryUrl(ev);
+
+                // Extract score and game status information
+                var homeScore = TryGetScore(home);
+                var awayScore = TryGetScore(away);
+                var gameStatus = GetGameStatus(ev);
+                var quarter = GetQuarter(ev);
+                var timeRemaining = GetTimeRemaining(ev);
+
+                yield return new Game
+                {
+                    Id = id,
+                    StartUtc = start.Value,
+                    EndUtc = start.Value.AddHours(3),
+                    HomeTeam = homeName,
+                    HomeRank = homeRank,
+                    HomeScore = homeScore,
+                    AwayTeam = awayName,
+                    AwayRank = awayRank,
+                    AwayScore = awayScore,
+                    Location = location,
+                    TvProvider = tv,
+                    Url = url,
+                    Status = gameStatus,
+                    Quarter = quarter,
+                    TimeRemaining = timeRemaining
                 };
             }
         }
@@ -174,6 +252,90 @@ namespace NcaafTop25Calendar.Services
                                 }
                             }
                         }
+                    }
+                }
+            }
+            catch { }
+            return null;
+        }
+
+        private static GameStatus GetGameStatus(JsonElement ev)
+        {
+            try
+            {
+                if (ev.TryGetProperty("status", out var status))
+                {
+                    var type = status.TryGetProperty("type", out var typeEl) ? typeEl.GetString() : string.Empty;
+                    var state = status.TryGetProperty("state", out var stateEl) ? stateEl.GetString() : string.Empty;
+
+                    if (string.Equals(type, "postgame", StringComparison.OrdinalIgnoreCase) || 
+                        string.Equals(state, "postgame", StringComparison.OrdinalIgnoreCase))
+                    {
+                        return GameStatus.Final;
+                    }
+                    else if (string.Equals(type, "in", StringComparison.OrdinalIgnoreCase) || 
+                             string.Equals(state, "in", StringComparison.OrdinalIgnoreCase))
+                    {
+                        return GameStatus.Live;
+                    }
+                }
+            }
+            catch { }
+            return GameStatus.Upcoming;
+        }
+
+        private static int? TryGetScore(JsonElement competitor)
+        {
+            try
+            {
+                if (competitor.TryGetProperty("score", out var score))
+                {
+                    if (score.ValueKind == JsonValueKind.Number) return score.GetInt32();
+                    if (score.ValueKind == JsonValueKind.String && int.TryParse(score.GetString(), out var v)) return v;
+                }
+            }
+            catch { }
+            return null;
+        }
+
+        private static string? GetQuarter(JsonElement ev)
+        {
+            try
+            {
+                if (ev.TryGetProperty("status", out var status))
+                {
+                    var period = status.TryGetProperty("period", out var periodEl) ? periodEl.GetInt32() : 0;
+                    if (period > 0 && period <= 4)
+                    {
+                        return period switch
+                        {
+                            1 => "1st",
+                            2 => "2nd", 
+                            3 => "3rd",
+                            4 => "4th",
+                            _ => $"{period}Q"
+                        };
+                    }
+                    else if (period > 4)
+                    {
+                        return "OT";
+                    }
+                }
+            }
+            catch { }
+            return null;
+        }
+
+        private static string? GetTimeRemaining(JsonElement ev)
+        {
+            try
+            {
+                if (ev.TryGetProperty("status", out var status))
+                {
+                    var clock = status.TryGetProperty("clock", out var clockEl) ? clockEl.GetString() : string.Empty;
+                    if (!string.IsNullOrWhiteSpace(clock))
+                    {
+                        return clock;
                     }
                 }
             }

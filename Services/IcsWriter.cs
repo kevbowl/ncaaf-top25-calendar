@@ -59,6 +59,15 @@ namespace NcaafTop25Calendar.Services
                 lines.Add($"TV: {g.TvProvider}");
                 lines.Add(string.Empty);
             }
+            
+            // Add game status and score information
+            string gameStatus = g.BuildGameStatusDescription();
+            if (!string.IsNullOrWhiteSpace(gameStatus))
+            {
+                lines.Add(gameStatus);
+                lines.Add(string.Empty);
+            }
+            
             lines.Add("Calendar by Kevin Bowling");
             lines.Add("http://kevinbowling.me");
             lines.Add(string.Empty);
