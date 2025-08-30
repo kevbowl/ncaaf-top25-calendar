@@ -31,7 +31,7 @@ namespace NcaafTop25Calendar.Services
                     DtStart = new CalDateTime(g.StartUtc.UtcDateTime, "UTC"),
                     DtEnd = new CalDateTime(g.EndUtc.UtcDateTime, "UTC"),
                     Location = g.Location ?? string.Empty,
-                    Description = string.IsNullOrWhiteSpace(g.TvProvider) ? string.Empty : $"TV: {g.TvProvider}",
+                    Description = BuildDescription(g),
                     Url = g.Url,
                     Status = "CONFIRMED",
                     Transparency = TransparencyType.Opaque
@@ -49,6 +49,23 @@ namespace NcaafTop25Calendar.Services
                 Directory.CreateDirectory(dir);
             }
             File.WriteAllText(filePath, ical);
+        }
+
+        private static string BuildDescription(Game g)
+        {
+            var lines = new List<string>();
+            if (!string.IsNullOrWhiteSpace(g.TvProvider))
+            {
+                lines.Add($"TV: {g.TvProvider}");
+                lines.Add(string.Empty);
+            }
+            lines.Add("Calendar by Kevin Bowling");
+            lines.Add("http://kevinbowling.me");
+            lines.Add(string.Empty);
+            lines.Add("Find a mistake? Email me: hello@kevinbowling.me");
+
+            // Use CRLF; the full VCALENDAR string is normalized later as well
+            return string.Join("\r\n", lines);
         }
     }
 }

@@ -26,7 +26,7 @@ namespace NcaafTop25Calendar.Models
             string away = (AwayRank.HasValue && AwayRank.Value >= 1 && AwayRank.Value <= 25)
                 ? $"#{AwayRank.Value} {AwayTeam}"
                 : AwayTeam;
-            return $"{away} at {home}";
+            return $"🏈 {away} at {home}";
         }
     }
 }

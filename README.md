@@ -1,4 +1,4 @@
-# NCAAF Top-25 Calendar (.NET 9)
+# College Football Top 25 Calendar
 
 Generates an iCal (.ics) with upcoming Top-25 NCAA Football matchups for the next 4 weeks using ESPN's scoreboard API.
 
@@ -7,7 +7,7 @@ Generates an iCal (.ics) with upcoming Top-25 NCAA Football matchups for the nex
 
 ## Prerequisites
 
-- .NET 9 SDK
+- .NET SDK (tested with .NET 9)
 
 ## Setup
 
@@ -22,13 +22,18 @@ cd /Users/kevin.bowling/Projects/ncaaf-top25-calendar
  dotnet run
 ```
 
-Output: `top25-ncaaf-next4weeks.ics` in the project root.
+Output: `docs/top25-ncaaf-next4weeks.ics` (GitHub Pages ready).
 
 ## Notes
 
 - Filters games where either team has `curatedRank.current` between 1 and 25.
-- Title format: `#6 Washington at #9 Auburn` (ranks included when available).
-- Includes venue (name, city/state/country) and TV broadcaster(s) if provided.
+- Title format: `🏈 #6 Washington at #9 Auburn` (ranks included when available; >25 hidden).
+- Location format: `Venue, City, ST, Country` (comma-separated).
+- Description includes TV when available, plus:
+  - `Calendar by Kevin Bowling`
+  - `http://kevinbowling.me`
+  - `Find a mistake? Email me: hello@kevinbowling.me`
+- Calendar name: "College Football Top 25" (via X-WR-CALNAME).
 - Uses Ical.Net for calendar generation.
 
 ## Sources

@@ -123,7 +123,7 @@ namespace NcaafTop25Calendar.Services
                 string parts = string.Join(", ", new[] { city, state, country }.Where(x => !string.IsNullOrWhiteSpace(x)));
                 if (!string.IsNullOrWhiteSpace(parts))
                 {
-                    return string.IsNullOrWhiteSpace(full) ? parts : $"{full} — {parts}";
+                    return string.IsNullOrWhiteSpace(full) ? parts : $"{full}, {parts}";
                 }
                 return full;
             }
