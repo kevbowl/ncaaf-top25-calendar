@@ -16,7 +16,7 @@ try
         games.AddRange(GameMapper.MapTop25Upcoming(weekDoc, DateTimeOffset.UtcNow));
     }
 
-    string output = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf-next4weeks.ics");
+    string output = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf.ics");
     IcsWriter.Write(output, games);
     Console.WriteLine($"Generated {output} with {games.Count} events.");
 }
