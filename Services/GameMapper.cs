@@ -367,7 +367,17 @@ namespace NcaafTop25Calendar.Services
             {
                 if (ev.TryGetProperty("status", out var status))
                 {
-                    // Clock can be either a number (seconds) or string
+                    // First try displayClock (already formatted)
+                    if (status.TryGetProperty("displayClock", out var displayClockEl) && displayClockEl.ValueKind == JsonValueKind.String)
+                    {
+                        var displayClock = displayClockEl.GetString();
+                        if (!string.IsNullOrWhiteSpace(displayClock))
+                        {
+                            return displayClock;
+                        }
+                    }
+                    
+                    // Fall back to converting numeric clock
                     if (status.TryGetProperty("clock", out var clockEl))
                     {
                         if (clockEl.ValueKind == JsonValueKind.Number)
