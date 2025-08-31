@@ -44,7 +44,7 @@ Output:
 
 ### Calendar Details
 - **Title format**: `🏈 #6 Washington at #9 Auburn` (ranks included when available; >25 hidden)
-- **Location format**: `Venue, City, ST, Country` (comma-separated)
+- **Location format**: `Venue, City, State, Country` (comma-separated)
 - **Description includes**:
   - TV broadcast information when available
   - Live game status and scores (e.g., "3rd 12:34: 24-31")
