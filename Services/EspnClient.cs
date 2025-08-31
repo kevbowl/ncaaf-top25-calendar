@@ -96,7 +96,11 @@ namespace NcaafTop25Calendar.Services
                                 currentIndex = Math.Max(0, weekNumbers.IndexOf(fallbackStartWeek));
                             }
 
-                            for (int i = currentIndex; i < weekNumbers.Count && result.Count < count; i++)
+                            // Include recent weeks (past 24 hours) and future weeks
+                            // Start from a few weeks back to catch recently completed games
+                            int startIndex = Math.Max(0, currentIndex - 2); // Include 2 weeks back
+                            
+                            for (int i = startIndex; i < weekNumbers.Count && result.Count < count; i++)
                             {
                                 if (weekNumbers[i] > 0)
                                 {
@@ -114,9 +118,13 @@ namespace NcaafTop25Calendar.Services
             }
             catch { }
 
-            for (int i = 0; i < count; i++)
+            // Fallback: include recent weeks and future weeks
+            for (int i = Math.Max(1, fallbackStartWeek - 2); i < fallbackStartWeek + count; i++)
             {
-                result.Add(fallbackStartWeek + i);
+                if (i > 0)
+                {
+                    result.Add(i);
+                }
             }
             return result;
         }

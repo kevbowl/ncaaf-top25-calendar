@@ -271,27 +271,45 @@ namespace NcaafTop25Calendar.Services
             {
                 if (ev.TryGetProperty("status", out var status))
                 {
-                    var type = status.TryGetProperty("type", out var typeEl) ? typeEl.GetString() : string.Empty;
-                    var state = status.TryGetProperty("state", out var stateEl) ? stateEl.GetString() : string.Empty;
-                    var period = status.TryGetProperty("period", out var periodEl) ? periodEl.GetInt32() : 0;
-                    var clock = status.TryGetProperty("clock", out var clockEl) ? clockEl.GetString() : string.Empty;
+                    // Check for the completed boolean - it's nested inside the type object
+                    if (status.TryGetProperty("type", out var typeEl))
+                    {
+                        if (typeEl.TryGetProperty("completed", out var completedEl) && completedEl.GetBoolean())
+                        {
+                            return GameStatus.Final;
+                        }
+                    }
 
-                    // Check for completed games
-                    if (string.Equals(type, "postgame", StringComparison.OrdinalIgnoreCase) || 
-                        string.Equals(state, "postgame", StringComparison.OrdinalIgnoreCase) ||
-                        string.Equals(type, "final", StringComparison.OrdinalIgnoreCase) ||
-                        string.Equals(state, "final", StringComparison.OrdinalIgnoreCase) ||
-                        string.Equals(type, "ended", StringComparison.OrdinalIgnoreCase) ||
-                        string.Equals(state, "ended", StringComparison.OrdinalIgnoreCase))
+                    // Check status type name and state
+                    var typeName = string.Empty;
+                    var typeState = string.Empty;
+                    
+                    if (status.TryGetProperty("type", out var typeEl2))
+                    {
+                        typeName = typeEl2.TryGetProperty("name", out var nameEl) ? nameEl.GetString() ?? string.Empty : string.Empty;
+                        typeState = typeEl2.TryGetProperty("state", out var stateEl) ? stateEl.GetString() ?? string.Empty : string.Empty;
+                    }
+
+                    // Check for completed games using various status indicators
+                    if (string.Equals(typeName, "STATUS_FINAL", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(typeName, "final", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(typeState, "post", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(typeState, "postgame", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(typeState, "final", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(typeState, "ended", StringComparison.OrdinalIgnoreCase))
                     {
                         return GameStatus.Final;
                     }
+
                     // Check for live games
-                    else if (string.Equals(type, "in", StringComparison.OrdinalIgnoreCase) || 
-                             string.Equals(state, "in", StringComparison.OrdinalIgnoreCase) ||
-                             string.Equals(type, "live", StringComparison.OrdinalIgnoreCase) ||
-                             string.Equals(state, "live", StringComparison.OrdinalIgnoreCase) ||
-                             (period > 0 && !string.IsNullOrEmpty(clock)))
+                    var period = status.TryGetProperty("period", out var periodEl) ? periodEl.GetInt32() : 0;
+                    var clock = status.TryGetProperty("clock", out var clockEl) ? clockEl.GetString() : string.Empty;
+                    
+                    if (string.Equals(typeName, "STATUS_IN_PROGRESS", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(typeName, "in", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(typeState, "in", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(typeState, "live", StringComparison.OrdinalIgnoreCase) ||
+                        (period > 0 && !string.IsNullOrEmpty(clock)))
                     {
                         return GameStatus.Live;
                     }
