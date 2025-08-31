@@ -38,13 +38,36 @@ namespace NcaafTop25Calendar.Models
 
         public string BuildGameStatusDescription()
         {
-            if (Status == GameStatus.Final && HomeScore.HasValue && AwayScore.HasValue)
+            // Only show scores for games that are actually in progress or completed
+            if (HomeScore.HasValue && AwayScore.HasValue)
             {
-                return $"Final Score: {AwayScore}-{HomeScore}";
+                if (Status == GameStatus.Final)
+                {
+                    return $"Final: {AwayScore}-{HomeScore}";
+                }
+                else if (Status == GameStatus.Live && !string.IsNullOrEmpty(Quarter) && !string.IsNullOrEmpty(TimeRemaining))
+                {
+                    return $"{Quarter} {TimeRemaining}: {AwayScore}-{HomeScore}";
+                }
+                else if (Status == GameStatus.Live)
+                {
+                    return $"Live: {AwayScore}-{HomeScore}";
+                }
+                // Don't show scores for upcoming games
             }
-            else if (Status == GameStatus.Live && HomeScore.HasValue && AwayScore.HasValue && !string.IsNullOrEmpty(Quarter) && !string.IsNullOrEmpty(TimeRemaining))
+            
+            // If no scores but we have status info, show that
+            if (Status == GameStatus.Live && !string.IsNullOrEmpty(Quarter) && !string.IsNullOrEmpty(TimeRemaining))
             {
-                return $"Live: {Quarter} {TimeRemaining} | {AwayScore}-{HomeScore}";
+                return $"Live: {Quarter} {TimeRemaining}";
+            }
+            else if (Status == GameStatus.Live)
+            {
+                return "Live";
+            }
+            else if (Status == GameStatus.Final)
+            {
+                return "Final";
             }
             
             return string.Empty;

@@ -5,6 +5,7 @@ using Ical.Net.CalendarComponents;
 using Ical.Net.DataTypes;
 using Ical.Net.Serialization;
 using NcaafTop25Calendar.Models;
+using System;
 
 namespace NcaafTop25Calendar.Services
 {
@@ -50,9 +51,21 @@ namespace NcaafTop25Calendar.Services
                 Version = "2.0",
                 ProductId = "-//ncaaf-top25-calendar//EN"
             };
+            
+            // Set appropriate description based on calendar type
+            string calendarDescription;
+            if (calendarName.Contains("H2H", StringComparison.OrdinalIgnoreCase))
+            {
+                calendarDescription = "Top 25 NCAA Football head-to-head matchups only (past 24 hours + next 3 weeks).";
+            }
+            else
+            {
+                calendarDescription = "Top 25 NCAA Football games (past 24 hours + next 3 weeks).";
+            }
+            
             // Friendly calendar name and description for clients like Google/Apple
             calendar.Properties.Add(new CalendarProperty("X-WR-CALNAME", calendarName));
-            calendar.Properties.Add(new CalendarProperty("X-WR-CALDESC", "Upcoming Top 25 NCAA Football games (next 3 weeks)."));
+            calendar.Properties.Add(new CalendarProperty("X-WR-CALDESC", calendarDescription));
             foreach (var g in games)
             {
                 var ev = new CalendarEvent

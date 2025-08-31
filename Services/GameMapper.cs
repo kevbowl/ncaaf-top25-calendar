@@ -22,7 +22,10 @@ namespace NcaafTop25Calendar.Services
                 if (string.IsNullOrEmpty(id) || !seen.Add(id)) continue;
 
                 DateTimeOffset? start = ev.TryGetProperty("date", out var d) && d.ValueKind == JsonValueKind.String && DateTimeOffset.TryParse(d.GetString(), out var dto) ? dto : null;
-                if (start == null || start.Value <= nowUtc) continue;
+                if (start == null) continue;
+                
+                // Include games from past 24 hours and future games (instead of excluding past games entirely)
+                if (start.Value < nowUtc.AddHours(-24)) continue;
 
                 if (!ev.TryGetProperty("competitions", out var comps) || comps.ValueKind != JsonValueKind.Array || comps.GetArrayLength() == 0) continue;
                 var comp = comps[0];
@@ -86,7 +89,10 @@ namespace NcaafTop25Calendar.Services
                 if (string.IsNullOrEmpty(id) || !seen.Add(id)) continue;
 
                 DateTimeOffset? start = ev.TryGetProperty("date", out var d) && d.ValueKind == JsonValueKind.String && DateTimeOffset.TryParse(d.GetString(), out var dto) ? dto : null;
-                if (start == null || start.Value <= nowUtc) continue;
+                if (start == null) continue;
+                
+                // Include games from past 24 hours and future games (instead of excluding past games entirely)
+                if (start.Value < nowUtc.AddHours(-24)) continue;
 
                 if (!ev.TryGetProperty("competitions", out var comps) || comps.ValueKind != JsonValueKind.Array || comps.GetArrayLength() == 0) continue;
                 var comp = comps[0];
@@ -267,14 +273,25 @@ namespace NcaafTop25Calendar.Services
                 {
                     var type = status.TryGetProperty("type", out var typeEl) ? typeEl.GetString() : string.Empty;
                     var state = status.TryGetProperty("state", out var stateEl) ? stateEl.GetString() : string.Empty;
+                    var period = status.TryGetProperty("period", out var periodEl) ? periodEl.GetInt32() : 0;
+                    var clock = status.TryGetProperty("clock", out var clockEl) ? clockEl.GetString() : string.Empty;
 
+                    // Check for completed games
                     if (string.Equals(type, "postgame", StringComparison.OrdinalIgnoreCase) || 
-                        string.Equals(state, "postgame", StringComparison.OrdinalIgnoreCase))
+                        string.Equals(state, "postgame", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(type, "final", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(state, "final", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(type, "ended", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(state, "ended", StringComparison.OrdinalIgnoreCase))
                     {
                         return GameStatus.Final;
                     }
+                    // Check for live games
                     else if (string.Equals(type, "in", StringComparison.OrdinalIgnoreCase) || 
-                             string.Equals(state, "in", StringComparison.OrdinalIgnoreCase))
+                             string.Equals(state, "in", StringComparison.OrdinalIgnoreCase) ||
+                             string.Equals(type, "live", StringComparison.OrdinalIgnoreCase) ||
+                             string.Equals(state, "live", StringComparison.OrdinalIgnoreCase) ||
+                             (period > 0 && !string.IsNullOrEmpty(clock)))
                     {
                         return GameStatus.Live;
                     }
