@@ -59,17 +59,65 @@ Output:
 
 The calendar automatically refreshes with an optimized schedule:
 
+*Note: [+1] indicates the following day, DST = Daylight Saving Time*
+
 ### During Game Times (Every Hour)
-- **Friday**: 6am-12pm SGT
-- **Saturday**: 6am-12pm SGT  
-- **Sunday**: 12am-1pm SGT
-- **Monday**: 6am-12pm SGT
+
+<table>
+<tr style="background-color: #666666; color: white;">
+<th>Day</th>
+<th>USA ET</th>
+<th>UTC</th>
+<th>SGT</th>
+</tr>
+<tr>
+<td><strong>Thursday</strong></td>
+<td><strong>5pm-2am</strong>[<em>+1</em>] (<em>Standard</em>) / <strong>6pm-3am</strong>[<em>+1</em>] (<em>DST</em>)</td>
+<td><strong>10pm-7am</strong>[<em>+1</em>]</td>
+<td><strong>6am-3pm</strong>[<em>+1</em>]</td>
+</tr>
+<tr style="background-color: #f8f8f8;">
+<td><strong>Friday</strong></td>
+<td><strong>5pm-2am</strong>[<em>+1</em>] (<em>Standard</em>) / <strong>6pm-3am</strong>[<em>+1</em>] (<em>DST</em>)</td>
+<td><strong>10pm-7am</strong>[<em>+1</em>]</td>
+<td><strong>6am-3pm</strong>[<em>+1</em>]</td>
+</tr>
+<tr>
+<td><strong>Saturday</strong></td>
+<td><strong>12pm-2am</strong>[<em>+1</em>] (<em>Standard</em>) / <strong>1pm-3am</strong>[<em>+1</em>] (<em>DST</em>)</td>
+<td><strong>5pm-7am</strong>[<em>+1</em>]</td>
+<td><strong>1am-3pm</strong>[<em>+1</em>]</td>
+</tr>
+</table>
 
 ### During Off-Hours (Once Daily)
-- **Tuesday-Wednesday**: Once daily at 6:00 UTC (2:00 PM SGT)
-- **Thursday**: Once daily at 6:00 UTC (2:00 PM SGT) - before games start
 
-This ensures real-time updates during actual games and efficient operation during off-hours.
+<table>
+<tr style="background-color: #666666; color: white;">
+<th>Day</th>
+<th>USA ET</th>
+<th>UTC</th>
+<th>SGT</th>
+</tr>
+<tr>
+<td><strong>Sunday</strong></td>
+<td><strong>1pm</strong> (<em>Standard</em>) / <strong>2pm</strong> (<em>DST</em>)</td>
+<td><strong>6pm</strong></td>
+<td><strong>2am</strong>[<em>+1</em>]</td>
+</tr>
+<tr style="background-color: #f8f8f8;">
+<td><strong>Monday-Wednesday</strong></td>
+<td><strong>1pm</strong> (<em>Standard</em>) / <strong>2pm</strong> (<em>DST</em>)</td>
+<td><strong>6pm</strong></td>
+<td><strong>2am</strong>[<em>+1</em>]</td>
+</tr>
+<tr>
+<td><strong>Thursday</strong></td>
+<td><strong>1pm</strong> (<em>Standard</em>) / <strong>2pm</strong> (<em>DST</em>)</td>
+<td><strong>6pm</strong></td>
+<td><strong>2am</strong>[<em>+1</em>]</td>
+</tr>
+</table>
 
 ## Technical Details
 
