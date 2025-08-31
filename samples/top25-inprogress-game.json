@@ -1,0 +1,438 @@
+{
+  "id": "401756877",
+  "uid": "s:20~l:23~e:401756877",
+  "date": "2025-08-30T23:30Z",
+  "name": "Arkansas-Pine Bluff Golden Lions at Texas Tech Red Raiders",
+  "shortName": "UAPB @ TTU",
+  "season": {
+    "year": 2025,
+    "type": 2,
+    "slug": "regular-season"
+  },
+  "week": {
+    "number": 1
+  },
+  "competitions": [
+    {
+      "id": "401756877",
+      "uid": "s:20~l:23~e:401756877~c:401756877",
+      "date": "2025-08-30T23:30Z",
+      "attendance": 0,
+      "type": {
+        "id": "1",
+        "abbreviation": "STD"
+      },
+      "timeValid": true,
+      "dateValid": false,
+      "neutralSite": false,
+      "conferenceCompetition": false,
+      "playByPlayAvailable": true,
+      "recent": true,
+      "venue": {
+        "id": "3784",
+        "fullName": "Jones AT&T Stadium",
+        "address": {
+          "city": "Lubbock",
+          "state": "TX",
+          "country": "USA"
+        },
+        "indoor": false
+      },
+      "competitors": [
+        {
+          "id": "2641",
+          "uid": "s:20~l:23~t:2641",
+          "type": "team",
+          "order": 0,
+          "homeAway": "home",
+          "team": {
+            "id": "2641",
+            "uid": "s:20~l:23~t:2641",
+            "location": "Texas Tech",
+            "name": "Red Raiders",
+            "abbreviation": "TTU",
+            "displayName": "Texas Tech Red Raiders",
+            "shortDisplayName": "Texas Tech",
+            "color": "000000",
+            "alternateColor": "da291c",
+            "isActive": true,
+            "venue": {
+              "id": "3784"
+            },
+            "links": [
+              {
+                "rel": [
+                  "clubhouse",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/_/id/2641/texas-tech-red-raiders",
+                "text": "Clubhouse",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "clubhouse",
+                  "mobile",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/_/id/2641/texas-tech-red-raiders",
+                "text": "Clubhouse",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "roster",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/roster/_/id/2641",
+                "text": "Roster",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "stats",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/stats/_/id/2641",
+                "text": "Statistics",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "schedule",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/2641",
+                "text": "Schedule",
+                "isExternal": false,
+                "isPremium": false
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+            "conferenceId": "4"
+          },
+          "score": "61",
+          "linescores": [
+            {
+              "value": 23.0,
+              "displayValue": "23",
+              "period": 1
+            },
+            {
+              "value": 24.0,
+              "displayValue": "24",
+              "period": 2
+            },
+            {
+              "value": 14.0,
+              "displayValue": "14",
+              "period": 3
+            }
+          ],
+          "curatedRank": {
+            "current": 23
+          },
+          "statistics": [],
+          "records": [
+            {
+              "name": "overall",
+              "abbreviation": "overall",
+              "type": "total",
+              "summary": "0-0"
+            },
+            {
+              "name": "Home",
+              "abbreviation": "Home",
+              "type": "homerecord",
+              "summary": "0-0"
+            },
+            {
+              "name": "Away",
+              "abbreviation": "Away",
+              "type": "awayrecord",
+              "summary": "0-0"
+            },
+            {
+              "name": "vs. Conf.",
+              "abbreviation": "CONF",
+              "type": "vsconf",
+              "summary": "0-0"
+            }
+          ]
+        },
+        {
+          "id": "2029",
+          "uid": "s:20~l:23~t:2029",
+          "type": "team",
+          "order": 1,
+          "homeAway": "away",
+          "team": {
+            "id": "2029",
+            "uid": "s:20~l:23~t:2029",
+            "location": "Arkansas-Pine Bluff",
+            "name": "Golden Lions",
+            "abbreviation": "UAPB",
+            "displayName": "Arkansas-Pine Bluff Golden Lions",
+            "shortDisplayName": "AR-Pine Bluff",
+            "color": "e0aa0f",
+            "alternateColor": "eaaa00",
+            "isActive": true,
+            "venue": {
+              "id": "3740"
+            },
+            "links": [
+              {
+                "rel": [
+                  "clubhouse",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/_/id/2029/arkansas-pine-bluff-golden-lions",
+                "text": "Clubhouse",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "clubhouse",
+                  "mobile",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/_/id/2029/arkansas-pine-bluff-golden-lions",
+                "text": "Clubhouse",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "roster",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/roster/_/id/2029",
+                "text": "Roster",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "stats",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/stats/_/id/2029",
+                "text": "Statistics",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "schedule",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/2029",
+                "text": "Schedule",
+                "isExternal": false,
+                "isPremium": false
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2029.png",
+            "conferenceId": "31"
+          },
+          "score": "0",
+          "linescores": [
+            {
+              "value": 0.0,
+              "displayValue": "0",
+              "period": 1
+            },
+            {
+              "value": 0.0,
+              "displayValue": "0",
+              "period": 2
+            },
+            {
+              "value": 0.0,
+              "displayValue": "0",
+              "period": 3
+            }
+          ],
+          "curatedRank": {
+            "current": 99
+          },
+          "statistics": [],
+          "records": [
+            {
+              "name": "overall",
+              "abbreviation": "overall",
+              "type": "total",
+              "summary": "0-0"
+            },
+            {
+              "name": "Home",
+              "abbreviation": "Home",
+              "type": "homerecord",
+              "summary": "0-0"
+            },
+            {
+              "name": "Away",
+              "abbreviation": "Away",
+              "type": "awayrecord",
+              "summary": "0-0"
+            },
+            {
+              "name": "vs. Conf.",
+              "abbreviation": "CONF",
+              "type": "vsconf",
+              "summary": "0-0"
+            }
+          ]
+        }
+      ],
+      "notes": [],
+      "situation": {},
+      "status": {
+        "clock": 210.0,
+        "displayClock": "3:30",
+        "period": 3,
+        "type": {
+          "id": "2",
+          "name": "STATUS_IN_PROGRESS",
+          "state": "in",
+          "completed": false,
+          "description": "In Progress",
+          "detail": "3:30 - 3rd Quarter",
+          "shortDetail": "3:30 - 3rd"
+        }
+      },
+      "broadcasts": [
+        {
+          "market": "national",
+          "names": [
+            "ESPN+"
+          ]
+        }
+      ],
+      "format": {
+        "regulation": {
+          "periods": 4
+        }
+      },
+      "startDate": "2025-08-30T23:30Z",
+      "broadcast": "ESPN+",
+      "geoBroadcasts": [
+        {
+          "type": {
+            "id": "4",
+            "shortName": "Streaming"
+          },
+          "market": {
+            "id": "1",
+            "type": "National"
+          },
+          "media": {
+            "shortName": "ESPN+",
+            "logo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default.png",
+            "darkLogo": "https://a.espncdn.com/guid/322a7e47-3cdb-3b5c-ab1b-678e1f2c27e5/logos/default-dark.png"
+          },
+          "lang": "en",
+          "region": "us"
+        }
+      ],
+      "highlights": []
+    }
+  ],
+  "links": [
+    {
+      "language": "en-US",
+      "rel": [
+        "live",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/college-football/game?gameId=401756877",
+      "text": "Gamecast",
+      "shortText": "Gamecast",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "boxscore",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/college-football/boxscore/_/gameId/401756877",
+      "text": "Box Score",
+      "shortText": "Box Score",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "highlights",
+        "desktop"
+      ],
+      "href": "https://www.espn.com/college-football/video?gameId=401756877",
+      "text": "Highlights",
+      "shortText": "Highlights",
+      "isExternal": false,
+      "isPremium": false
+    },
+    {
+      "language": "en-US",
+      "rel": [
+        "pbp",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/college-football/playbyplay/_/gameId/401756877",
+      "text": "Play-by-Play",
+      "shortText": "Play-by-Play",
+      "isExternal": false,
+      "isPremium": false
+    }
+  ],
+  "weather": {
+    "displayValue": "7",
+    "temperature": 75,
+    "highTemperature": 75,
+    "conditionId": "Cloudy",
+    "link": {
+      "language": "en-US",
+      "rel": [
+        "79401"
+      ],
+      "href": "http://www.accuweather.com/en/us/jones-at-t-stadium-tx/79401/current-weather/53649_poi?lang=en-us",
+      "text": "Weather",
+      "shortText": "Weather",
+      "isExternal": true,
+      "isPremium": false
+    }
+  },
+  "status": {
+    "clock": 210.0,
+    "displayClock": "3:30",
+    "period": 3,
+    "type": {
+      "id": "2",
+      "name": "STATUS_IN_PROGRESS",
+      "state": "in",
+      "completed": false,
+      "description": "In Progress",
+      "detail": "3:30 - 3rd Quarter",
+      "shortDetail": "3:30 - 3rd"
+    }
+  }
+}

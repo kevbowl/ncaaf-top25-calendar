@@ -1,0 +1,695 @@
+{
+  "id": "401752680",
+  "uid": "s:20~l:23~e:401752680",
+  "date": "2025-08-31T19:00Z",
+  "name": "Virginia Tech Hokies at South Carolina Gamecocks",
+  "shortName": "VT VS SC",
+  "season": {
+    "year": 2025,
+    "type": 2,
+    "slug": "regular-season"
+  },
+  "week": {
+    "number": 1
+  },
+  "competitions": [
+    {
+      "id": "401752680",
+      "uid": "s:20~l:23~e:401752680~c:401752680",
+      "date": "2025-08-31T19:00Z",
+      "attendance": 0,
+      "type": {
+        "id": "1",
+        "abbreviation": "STD"
+      },
+      "timeValid": true,
+      "dateValid": false,
+      "neutralSite": true,
+      "conferenceCompetition": false,
+      "playByPlayAvailable": false,
+      "recent": false,
+      "venue": {
+        "id": "5348",
+        "fullName": "Mercedes-Benz Stadium",
+        "address": {
+          "city": "Atlanta",
+          "state": "GA",
+          "country": "USA"
+        },
+        "indoor": true
+      },
+      "competitors": [
+        {
+          "id": "2579",
+          "uid": "s:20~l:23~t:2579",
+          "type": "team",
+          "order": 0,
+          "homeAway": "home",
+          "team": {
+            "id": "2579",
+            "uid": "s:20~l:23~t:2579",
+            "location": "South Carolina",
+            "name": "Gamecocks",
+            "abbreviation": "SC",
+            "displayName": "South Carolina Gamecocks",
+            "shortDisplayName": "South Carolina",
+            "color": "73000a",
+            "alternateColor": "ffffff",
+            "isActive": true,
+            "venue": {
+              "id": "3994"
+            },
+            "links": [
+              {
+                "rel": [
+                  "clubhouse",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/_/id/2579/south-carolina-gamecocks",
+                "text": "Clubhouse",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "clubhouse",
+                  "mobile",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/_/id/2579/south-carolina-gamecocks",
+                "text": "Clubhouse",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "roster",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/roster/_/id/2579",
+                "text": "Roster",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "stats",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/stats/_/id/2579",
+                "text": "Statistics",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "schedule",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/2579",
+                "text": "Schedule",
+                "isExternal": false,
+                "isPremium": false
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
+            "conferenceId": "8"
+          },
+          "score": "0",
+          "curatedRank": {
+            "current": 13
+          },
+          "statistics": [],
+          "records": [
+            {
+              "name": "overall",
+              "abbreviation": "overall",
+              "type": "total",
+              "summary": "0-0"
+            },
+            {
+              "name": "Home",
+              "abbreviation": "Home",
+              "type": "homerecord",
+              "summary": "0-0"
+            },
+            {
+              "name": "Away",
+              "abbreviation": "Away",
+              "type": "awayrecord",
+              "summary": "0-0"
+            },
+            {
+              "name": "vs. Conf.",
+              "abbreviation": "CONF",
+              "type": "vsconf",
+              "summary": "0-0"
+            }
+          ]
+        },
+        {
+          "id": "259",
+          "uid": "s:20~l:23~t:259",
+          "type": "team",
+          "order": 1,
+          "homeAway": "away",
+          "team": {
+            "id": "259",
+            "uid": "s:20~l:23~t:259",
+            "location": "Virginia Tech",
+            "name": "Hokies",
+            "abbreviation": "VT",
+            "displayName": "Virginia Tech Hokies",
+            "shortDisplayName": "Virginia Tech",
+            "color": "630031",
+            "alternateColor": "cf4520",
+            "isActive": true,
+            "venue": {
+              "id": "3799"
+            },
+            "links": [
+              {
+                "rel": [
+                  "clubhouse",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/_/id/259/virginia-tech-hokies",
+                "text": "Clubhouse",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "clubhouse",
+                  "mobile",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/_/id/259/virginia-tech-hokies",
+                "text": "Clubhouse",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "roster",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/roster/_/id/259",
+                "text": "Roster",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "stats",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/stats/_/id/259",
+                "text": "Statistics",
+                "isExternal": false,
+                "isPremium": false
+              },
+              {
+                "rel": [
+                  "schedule",
+                  "desktop",
+                  "team"
+                ],
+                "href": "https://www.espn.com/college-football/team/schedule/_/id/259",
+                "text": "Schedule",
+                "isExternal": false,
+                "isPremium": false
+              }
+            ],
+            "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
+            "conferenceId": "1"
+          },
+          "score": "0",
+          "curatedRank": {
+            "current": 99
+          },
+          "statistics": [],
+          "records": [
+            {
+              "name": "overall",
+              "abbreviation": "overall",
+              "type": "total",
+              "summary": "0-0"
+            },
+            {
+              "name": "Home",
+              "abbreviation": "Home",
+              "type": "homerecord",
+              "summary": "0-0"
+            },
+            {
+              "name": "Away",
+              "abbreviation": "Away",
+              "type": "awayrecord",
+              "summary": "0-0"
+            },
+            {
+              "name": "vs. Conf.",
+              "abbreviation": "CONF",
+              "type": "vsconf",
+              "summary": "0-0"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "type": "event",
+          "headline": "Aflac Kickoff"
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "0:00",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sun, August 31st at 3:00 PM EDT",
+          "shortDetail": "8/31 - 3:00 PM EDT"
+        }
+      },
+      "broadcasts": [
+        {
+          "market": "national",
+          "names": [
+            "ESPN"
+          ]
+        }
+      ],
+      "format": {
+        "regulation": {
+          "periods": 4
+        }
+      },
+      "tickets": [
+        {
+          "summary": "Tickets as low as $40",
+          "numberAvailable": 2545,
+          "links": [
+            {
+              "href": "https://www.vividseats.com/virginia-tech-hokies-football-tickets-mercedes-benz-stadium-8-31-2025--sports-ncaa-football/production/5352408?wsUser=717"
+            },
+            {
+              "href": "https://www.vividseats.com/mercedesbenz-stadium-tickets/venue/14188?wsUser=717"
+            }
+          ]
+        }
+      ],
+      "startDate": "2025-08-31T19:00Z",
+      "broadcast": "ESPN",
+      "geoBroadcasts": [
+        {
+          "type": {
+            "id": "1",
+            "shortName": "TV"
+          },
+          "market": {
+            "id": "1",
+            "type": "National"
+          },
+          "media": {
+            "shortName": "ESPN",
+            "logo": "https://a.espncdn.com/guid/335fd2d2-97b9-336b-81ee-573eb6bdcffc/logos/default.png",
+            "darkLogo": ""
+          },
+          "lang": "en",
+          "region": "us"
+        },
+        {
+          "type": {
+            "id": "5",
+            "shortName": "Radio"
+          },
+          "market": {
+            "id": "1",
+            "type": "National"
+          },
+          "media": {
+            "shortName": "ERADM"
+          },
+          "lang": "en",
+          "region": "us"
+        }
+      ],
+      "odds": [
+        {
+          "provider": {
+            "id": "58",
+            "name": "ESPN BET",
+            "priority": 1,
+            "logos": [
+              {
+                "href": "https://a.espncdn.com/i/espnbet/ESPN_Bet_Sportsbook_Light.svg",
+                "rel": [
+                  "light"
+                ]
+              },
+              {
+                "href": "https://a.espncdn.com/i/espnbet/ESPN_Bet_Sportsbook_Dark.svg",
+                "rel": [
+                  "dark"
+                ]
+              }
+            ]
+          },
+          "details": "SC -7.5",
+          "overUnder": 51.5,
+          "spread": -7.5,
+          "awayTeamOdds": {
+            "favorite": false,
+            "underdog": true,
+            "team": {
+              "id": "259",
+              "uid": "s:20~l:23~t:259",
+              "abbreviation": "VT",
+              "name": "Hokies",
+              "displayName": "Virginia Tech Hokies",
+              "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png"
+            },
+            "favoriteAtOpen": false
+          },
+          "homeTeamOdds": {
+            "favorite": true,
+            "underdog": false,
+            "team": {
+              "id": "2579",
+              "uid": "s:20~l:23~t:2579",
+              "abbreviation": "SC",
+              "name": "Gamecocks",
+              "displayName": "South Carolina Gamecocks",
+              "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png"
+            },
+            "favoriteAtOpen": true
+          },
+          "moneyline": {
+            "displayName": "Moneyline",
+            "shortDisplayName": "ML",
+            "home": {
+              "close": {
+                "odds": "-280",
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "home",
+                    "desktop",
+                    "bets",
+                    "espn-bet"
+                  ],
+                  "href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/football/organization/united-states/competition/ncaaf/event/5a45edf1-ecae-471a-9210-cadee61618e7&market_selection_id[0]=98542fe2-930d-4198-99bc-d2a4618faea7&odds_numerator[0]=19&odds_denominator[0]=14",
+                  "text": "Home Bet",
+                  "shortText": "Home Bet",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "college-football",
+                      "sport": "football",
+                      "gameId": 401752680,
+                      "betSide": "home",
+                      "betType": "straight"
+                    }
+                  }
+                }
+              },
+              "open": {
+                "odds": "-240"
+              }
+            },
+            "away": {
+              "close": {
+                "odds": "+230",
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "away",
+                    "desktop",
+                    "bets",
+                    "espn-bet"
+                  ],
+                  "href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/football/organization/united-states/competition/ncaaf/event/5a45edf1-ecae-471a-9210-cadee61618e7&market_selection_id[0]=cc4a3681-362b-49ae-8a32-fd6ee6697515&odds_numerator[0]=33&odds_denominator[0]=10",
+                  "text": "Away Bet",
+                  "shortText": "Away Bet",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "college-football",
+                      "sport": "football",
+                      "gameId": 401752680,
+                      "betSide": "away",
+                      "betType": "straight"
+                    }
+                  }
+                }
+              },
+              "open": {
+                "odds": "+200"
+              }
+            }
+          },
+          "pointSpread": {
+            "displayName": "Spread",
+            "shortDisplayName": "Spread",
+            "home": {
+              "close": {
+                "line": "-7.5",
+                "odds": "EVEN",
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "homeSpread",
+                    "desktop",
+                    "bets"
+                  ],
+                  "href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/football/organization/united-states/competition/ncaaf/event/5a45edf1-ecae-471a-9210-cadee61618e7&market_selection_id[0]=a5faa7e1-4245-4042-9b45-efab6a38bfa0&odds_numerator[0]=2&odds_denominator[0]=1",
+                  "text": "Home Point Spread",
+                  "shortText": "Home Point Spread",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "college-football",
+                      "sport": "football",
+                      "gameId": 401752680,
+                      "betSide": "none",
+                      "betType": "straight",
+                      "betDetails": "Spread:SC-7.5"
+                    }
+                  }
+                }
+              },
+              "open": {
+                "line": "-7.5",
+                "odds": "-110"
+              }
+            },
+            "away": {
+              "close": {
+                "line": "+7.5",
+                "odds": "-120",
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "awaySpread",
+                    "desktop",
+                    "bets"
+                  ],
+                  "href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/football/organization/united-states/competition/ncaaf/event/5a45edf1-ecae-471a-9210-cadee61618e7&market_selection_id[0]=8fa7abbf-c4a8-4b54-8d0f-7449ac3589b5&odds_numerator[0]=11&odds_denominator[0]=6",
+                  "text": "Away Point Spread",
+                  "shortText": "Away Point Spread",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "college-football",
+                      "sport": "football",
+                      "gameId": 401752680,
+                      "betSide": "none",
+                      "betType": "straight",
+                      "betDetails": "Spread:VT+7.5"
+                    }
+                  }
+                }
+              },
+              "open": {
+                "line": "+7.5",
+                "odds": "-110"
+              }
+            }
+          },
+          "total": {
+            "displayName": "Total Points",
+            "shortDisplayName": "Total",
+            "over": {
+              "close": {
+                "line": "o51.5",
+                "odds": "-115",
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "over",
+                    "desktop",
+                    "bets"
+                  ],
+                  "href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/football/organization/united-states/competition/ncaaf/event/5a45edf1-ecae-471a-9210-cadee61618e7&market_selection_id[0]=d257b24d-bcea-4ec9-9e58-06dd3d1ffb31&odds_numerator[0]=43&odds_denominator[0]=23",
+                  "text": "Over Odds",
+                  "shortText": "Over Odds",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "college-football",
+                      "sport": "football",
+                      "gameId": 401752680,
+                      "betSide": "over",
+                      "betType": "straight",
+                      "betDetails": "Over:51.5"
+                    }
+                  }
+                }
+              },
+              "open": {
+                "line": "o51.5",
+                "odds": "-105"
+              }
+            },
+            "under": {
+              "close": {
+                "line": "u51.5",
+                "odds": "-105",
+                "link": {
+                  "language": "en-US",
+                  "rel": [
+                    "under",
+                    "desktop",
+                    "bets"
+                  ],
+                  "href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/football/organization/united-states/competition/ncaaf/event/5a45edf1-ecae-471a-9210-cadee61618e7&market_selection_id[0]=98fa77e6-3981-4935-b202-3d8b00599691&odds_numerator[0]=41&odds_denominator[0]=21",
+                  "text": "Under Odds",
+                  "shortText": "Under Odds",
+                  "isExternal": true,
+                  "isPremium": false,
+                  "tracking": {
+                    "campaign": "betting-integrations",
+                    "tags": {
+                      "league": "college-football",
+                      "sport": "football",
+                      "gameId": 401752680,
+                      "betSide": "under",
+                      "betType": "straight",
+                      "betDetails": "Under:51.5"
+                    }
+                  }
+                }
+              },
+              "open": {
+                "line": "u51.5",
+                "odds": "-115"
+              }
+            }
+          },
+          "link": {
+            "language": "en-US",
+            "rel": [
+              "game",
+              "desktop",
+              "bets"
+            ],
+            "href": "https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/football/organization/united-states/competition/ncaaf/event/5a45edf1-ecae-471a-9210-cadee61618e7",
+            "text": "See More on ESPN BET Sportsbook",
+            "shortText": "Game",
+            "isExternal": true,
+            "isPremium": false,
+            "tracking": {
+              "campaign": "betting-integrations",
+              "tags": {
+                "league": "college-football",
+                "sport": "football",
+                "gameId": 401752680,
+                "betSide": "none",
+                "betType": "straight"
+              }
+            }
+          },
+          "header": {
+            "logo": {
+              "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+              "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+              "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+              "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+            },
+            "text": "ESPN Bet Sportsbook"
+          }
+        }
+      ],
+      "highlights": []
+    }
+  ],
+  "links": [
+    {
+      "language": "en-US",
+      "rel": [
+        "summary",
+        "desktop",
+        "event"
+      ],
+      "href": "https://www.espn.com/college-football/game/_/gameId/401752680/virginia-tech-south-carolina",
+      "text": "Gamecast",
+      "shortText": "Gamecast",
+      "isExternal": false,
+      "isPremium": false
+    }
+  ],
+  "weather": {
+    "displayValue": "Partly sunny",
+    "temperature": 82,
+    "highTemperature": 82,
+    "conditionId": "3",
+    "link": {
+      "language": "en-US",
+      "rel": [
+        "30313"
+      ],
+      "href": "http://www.accuweather.com/en/us/mercedes-benz-stadium-ga/30303/hourly-weather-forecast/17252_poi?day=2&hbhhour=15&lang=en-us",
+      "text": "Weather",
+      "shortText": "Weather",
+      "isExternal": true,
+      "isPremium": false
+    }
+  },
+  "status": {
+    "clock": 0.0,
+    "displayClock": "0:00",
+    "period": 0,
+    "type": {
+      "id": "1",
+      "name": "STATUS_SCHEDULED",
+      "state": "pre",
+      "completed": false,
+      "description": "Scheduled",
+      "detail": "Sun, August 31st at 3:00 PM EDT",
+      "shortDetail": "8/31 - 3:00 PM EDT"
+    }
+  }
+}
