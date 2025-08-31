@@ -265,7 +265,7 @@ namespace NcaafTop25Calendar.Services
             return null;
         }
 
-        private static GameStatus GetGameStatus(JsonElement ev)
+        public static GameStatus GetGameStatus(JsonElement ev)
         {
             try
             {
@@ -319,7 +319,7 @@ namespace NcaafTop25Calendar.Services
             return GameStatus.Upcoming;
         }
 
-        private static int? TryGetScore(JsonElement competitor)
+        public static int? TryGetScore(JsonElement competitor)
         {
             try
             {
@@ -333,7 +333,7 @@ namespace NcaafTop25Calendar.Services
             return null;
         }
 
-        private static string? GetQuarter(JsonElement ev)
+        public static string? GetQuarter(JsonElement ev)
         {
             try
             {
@@ -361,7 +361,7 @@ namespace NcaafTop25Calendar.Services
             return null;
         }
 
-        private static string? GetTimeRemaining(JsonElement ev)
+        public static string? GetTimeRemaining(JsonElement ev)
         {
             try
             {
