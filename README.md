@@ -1,6 +1,6 @@
 # College Football Top 25 Calendar
 
-Generates iCal (.ics) files with upcoming Top-25 NCAA Football matchups for the next 3 weeks using ESPN's scoreboard API. Now includes live game status, scores, and a separate Head-to-Head calendar for Top 25 vs Top 25 matchups.
+Generates iCal (.ics) files with Top-25 NCAA Football matchups for the past 24 hours and next 3 weeks using ESPN's scoreboard API. Now includes live game status, scores, and a separate Head-to-Head calendar for Top 25 vs Top 25 matchups.
 
 ## Subscribe to Calendars
 
@@ -30,29 +30,30 @@ cd /Users/kevin.bowling/Projects/ncaaf-top25-calendar
 ```
 
 Output: 
-- `docs/top25-ncaaf.ics` - All Top 25 games
-- `docs/top25-ncaaf-h2h.ics` - Top 25 vs Top 25 matchups only
+- `docs/top25-ncaaf.ics` - All Top 25 games (past 24h + next 3 weeks)
+- `docs/top25-ncaaf-h2h.ics` - Top 25 vs Top 25 matchups only (past 24h + next 3 weeks)
 
 ## Features
 
 ### Game Information
 - Filters games where either team has `curatedRank.current` between 1 and 25
+- **Time Window**: Includes games from past 24 hours and next 3 weeks (not just upcoming)
 - **Live Game Status**: Shows current quarter, time remaining, and scores for games in progress
 - **Final Scores**: Displays final scores for completed games
-- **Upcoming Games**: Clean display for games that haven't started yet
+- **Upcoming Games**: Clean display for games that haven't started yet (no scores shown)
 
 ### Calendar Details
 - **Title format**: `🏈 #6 Washington at #9 Auburn` (ranks included when available; >25 hidden)
 - **Location format**: `Venue, City, ST, Country` (comma-separated)
 - **Description includes**:
   - TV broadcast information when available
-  - Live game status and scores (e.g., "Live: 3rd 12:34 | 24-31")
-  - Final scores (e.g., "Final Score: 14-42")
+  - Live game status and scores (e.g., "3rd 12:34: 24-31")
+  - Final scores (e.g., "Final: 14-42")
   - Calendar attribution and contact information
 
-### Calendar Names
-- **Main Calendar**: "College Football Top 25" (via X-WR-CALNAME)
-- **H2H Calendar**: "College Football Top25 H2H" (Top 25 vs Top 25 only)
+### Calendar Names & Descriptions
+- **Main Calendar**: "College Football Top 25" - "Top 25 NCAA Football games (past 24 hours + next 3 weeks)."
+- **H2H Calendar**: "College Football Top25 H2H" - "Top 25 NCAA Football head-to-head matchups only (past 24 hours + next 3 weeks)."
 
 ## Automated Updates
 
@@ -77,6 +78,7 @@ This ensures real-time updates during actual games and efficient operation durin
 - GitHub Actions workflow with optimized cron scheduling
 - ESPN API integration for live data
 - Score and game status extraction from API responses
+- Enhanced game status detection for better ESPN data parsing
 
 ## Sources
 
