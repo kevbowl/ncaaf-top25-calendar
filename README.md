@@ -63,61 +63,19 @@ The calendar automatically refreshes with an optimized schedule:
 
 ### During Game Times (Every Hour)
 
-<table>
-<tr style="background-color: #666666; color: white;">
-<th>Day</th>
-<th>USA ET</th>
-<th>UTC</th>
-<th>SGT</th>
-</tr>
-<tr>
-<td><strong>Thursday</strong></td>
-<td><strong>5pm-2am</strong>[<em>+1</em>] (<em>Standard</em>) / <strong>6pm-3am</strong>[<em>+1</em>] (<em>DST</em>)</td>
-<td><strong>10pm-7am</strong>[<em>+1</em>]</td>
-<td><strong>6am-3pm</strong>[<em>+1</em>]</td>
-</tr>
-<tr style="background-color: #f8f8f8;">
-<td><strong>Friday</strong></td>
-<td><strong>5pm-2am</strong>[<em>+1</em>] (<em>Standard</em>) / <strong>6pm-3am</strong>[<em>+1</em>] (<em>DST</em>)</td>
-<td><strong>10pm-7am</strong>[<em>+1</em>]</td>
-<td><strong>6am-3pm</strong>[<em>+1</em>]</td>
-</tr>
-<tr>
-<td><strong>Saturday</strong></td>
-<td><strong>12pm-2am</strong>[<em>+1</em>] (<em>Standard</em>) / <strong>1pm-3am</strong>[<em>+1</em>] (<em>DST</em>)</td>
-<td><strong>5pm-7am</strong>[<em>+1</em>]</td>
-<td><strong>1am-3pm</strong>[<em>+1</em>]</td>
-</tr>
-</table>
+| **Day** | **USA ET** | **UTC** | **SGT** |
+|:--------|:-----------|:--------|:--------|
+| **Thursday** | **5pm-2am**[*+1*] (*Standard*) / **6pm-3am**[*+1*] (*DST*) | **10pm-7am**[*+1*] | **6am-3pm**[*+1*] |
+| **Friday** | **5pm-2am**[*+1*] (*Standard*) / **6pm-3am**[*+1*] (*DST*) | **10pm-7am**[*+1*] | **6am-3pm**[*+1*] |
+| **Saturday** | **12pm-2am**[*+1*] (*Standard*) / **1pm-3am**[*+1*] (*DST*) | **5pm-7am**[*+1*] | **1am-3pm**[*+1*] |
 
 ### During Off-Hours (Once Daily)
 
-<table>
-<tr style="background-color: #666666; color: white;">
-<th>Day</th>
-<th>USA ET</th>
-<th>UTC</th>
-<th>SGT</th>
-</tr>
-<tr>
-<td><strong>Sunday</strong></td>
-<td><strong>1pm</strong> (<em>Standard</em>) / <strong>2pm</strong> (<em>DST</em>)</td>
-<td><strong>6pm</strong></td>
-<td><strong>2am</strong>[<em>+1</em>]</td>
-</tr>
-<tr style="background-color: #f8f8f8;">
-<td><strong>Monday-Wednesday</strong></td>
-<td><strong>1pm</strong> (<em>Standard</em>) / <strong>2pm</strong> (<em>DST</em>)</td>
-<td><strong>6pm</strong></td>
-<td><strong>2am</strong>[<em>+1</em>]</td>
-</tr>
-<tr>
-<td><strong>Thursday</strong></td>
-<td><strong>1pm</strong> (<em>Standard</em>) / <strong>2pm</strong> (<em>DST</em>)</td>
-<td><strong>6pm</strong></td>
-<td><strong>2am</strong>[<em>+1</em>]</td>
-</tr>
-</table>
+| **Day** | **USA ET** | **UTC** | **SGT** |
+|:--------|:-----------|:--------|:--------|
+| **Sunday** | **1pm** (*Standard*) / **2pm** (*DST*) | **6pm** | **2am**[*+1*] |
+| **Monday-Wednesday** | **1pm** (*Standard*) / **2pm** (*DST*) | **6pm** | **2am**[*+1*] |
+| **Thursday** | **1pm** (*Standard*) / **2pm** (*DST*) | **6pm** | **2am**[*+1*] |
 
 ## Technical Details
 
