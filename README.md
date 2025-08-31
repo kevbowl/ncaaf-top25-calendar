@@ -65,17 +65,14 @@ The calendar automatically refreshes with an optimized schedule:
 
 | **Day** | **USA ET** | **UTC** | **SGT** |
 |:--------|:-----------|:--------|:--------|
-| **Thursday** | **5pm-2am**[*+1*] (*Standard*) / **6pm-3am**[*+1*] (*DST*) | **10pm-7am**[*+1*] | **6am-3pm**[*+1*] |
-| **Friday** | **5pm-2am**[*+1*] (*Standard*) / **6pm-3am**[*+1*] (*DST*) | **10pm-7am**[*+1*] | **6am-3pm**[*+1*] |
-| **Saturday** | **12pm-2am**[*+1*] (*Standard*) / **1pm-3am**[*+1*] (*DST*) | **5pm-7am**[*+1*] | **1am-3pm**[*+1*] |
+| **Thu-Fri** | **5pm-2am**[*+1*] (*Standard*) / **6pm-3am**[*+1*] (*DST*) | **10pm-7am**[*+1*] | **6am-3pm**[*+1*] |
+| **Sat** | **12pm-2am**[*+1*] (*Standard*) / **1pm-3am**[*+1*] (*DST*) | **5pm-7am**[*+1*] | **1am-3pm**[*+1*] |
 
 ### During Off-Hours (Once Daily)
 
 | **Day** | **USA ET** | **UTC** | **SGT** |
 |:--------|:-----------|:--------|:--------|
-| **Sunday** | **1pm** (*Standard*) / **2pm** (*DST*) | **6pm** | **2am**[*+1*] |
-| **Monday-Wednesday** | **1pm** (*Standard*) / **2pm** (*DST*) | **6pm** | **2am**[*+1*] |
-| **Thursday** | **1pm** (*Standard*) / **2pm** (*DST*) | **6pm** | **2am**[*+1*] |
+| **Sun-Thu** | **1pm** (*Standard*) / **2pm** (*DST*) | **6pm** | **2am**[*+1*] |
 
 ## Technical Details
 
