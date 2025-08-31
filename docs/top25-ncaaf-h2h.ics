@@ -7,23 +7,10 @@ X-WR-CALDESC:Top 25 NCAA Football head-to-head matchups only (past 24 hours
   + next 3 weeks).
 X-WR-CALNAME:College Football Top25 H2H
 BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
- nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20250831T023000Z
-DTSTAMP:20250831T031515Z
-DTSTART:20250830T233000Z
-LOCATION:Memorial Stadium (Clemson\, SC)\, Clemson\, SC\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #9 LSU at #4 Clemson
-TRANSP:OPAQUE
-UID:401752671
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nFinal: 7-14\n\nCalendar by Kevin Bowling\nhttp://kev
  inbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250830T190000Z
-DTSTAMP:20250831T031515Z
+DTSTAMP:20250831T032133Z
 DTSTART:20250830T160000Z
 LOCATION:Ohio Stadium\, Columbus\, OH\, USA
 SEQUENCE:0
@@ -35,10 +22,25 @@ URL:https://www.espn.com/college-football/game/_/gameId/401752677/texas-ohi
  o-state
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:TV: ABC\n\nFinal: 17-10\n\nCalendar by Kevin Bowling\nhttp://ke
+ vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20250831T023000Z
+DTSTAMP:20250831T032133Z
+DTSTART:20250830T233000Z
+LOCATION:Memorial Stadium (Clemson\, SC)\, Clemson\, SC\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #9 LSU at #4 Clemson
+TRANSP:OPAQUE
+UID:401752671
+URL:https://www.espn.com/college-football/game/_/gameId/401752671/lsu-clems
+ on
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250901T023000Z
-DTSTAMP:20250831T031515Z
+DTSTAMP:20250831T032133Z
 DTSTART:20250831T233000Z
 LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, USA
 SEQUENCE:0
@@ -53,7 +55,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250907T023000Z
-DTSTAMP:20250831T031515Z
+DTSTAMP:20250831T032133Z
 DTSTART:20250906T233000Z
 LOCATION:Memorial Stadium (Norman\, OK)\, Norman\, OK\, USA
 SEQUENCE:0
@@ -68,7 +70,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250913T223000Z
-DTSTAMP:20250831T031515Z
+DTSTAMP:20250831T032133Z
 DTSTART:20250913T193000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
@@ -83,7 +85,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\; Peacock\n\nCalendar by Kevin Bowling\nhttp://kevinbow
  ling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250914T023000Z
-DTSTAMP:20250831T031515Z
+DTSTAMP:20250831T032133Z
 DTSTART:20250913T233000Z
 LOCATION:Notre Dame Stadium\, Notre Dame\, IN\, USA
 SEQUENCE:0
@@ -98,7 +100,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250914T023000Z
-DTSTAMP:20250831T031515Z
+DTSTAMP:20250831T032133Z
 DTSTART:20250913T233000Z
 LOCATION:Tiger Stadium (LA)\, Baton Rouge\, LA\, USA
 SEQUENCE:0

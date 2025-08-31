@@ -303,13 +303,13 @@ namespace NcaafTop25Calendar.Services
 
                     // Check for live games
                     var period = status.TryGetProperty("period", out var periodEl) ? periodEl.GetInt32() : 0;
-                    var clock = status.TryGetProperty("clock", out var clockEl) ? clockEl.GetString() : string.Empty;
+                    var hasClock = status.TryGetProperty("clock", out var _);
                     
                     if (string.Equals(typeName, "STATUS_IN_PROGRESS", StringComparison.OrdinalIgnoreCase) ||
                         string.Equals(typeName, "in", StringComparison.OrdinalIgnoreCase) ||
                         string.Equals(typeState, "in", StringComparison.OrdinalIgnoreCase) ||
                         string.Equals(typeState, "live", StringComparison.OrdinalIgnoreCase) ||
-                        (period > 0 && !string.IsNullOrEmpty(clock)))
+                        (period > 0 && hasClock))
                     {
                         return GameStatus.Live;
                     }
@@ -367,10 +367,25 @@ namespace NcaafTop25Calendar.Services
             {
                 if (ev.TryGetProperty("status", out var status))
                 {
-                    var clock = status.TryGetProperty("clock", out var clockEl) ? clockEl.GetString() : string.Empty;
-                    if (!string.IsNullOrWhiteSpace(clock))
+                    // Clock can be either a number (seconds) or string
+                    if (status.TryGetProperty("clock", out var clockEl))
                     {
-                        return clock;
+                        if (clockEl.ValueKind == JsonValueKind.Number)
+                        {
+                            // Convert seconds to MM:SS format
+                            var seconds = clockEl.GetInt32();
+                            var minutes = seconds / 60;
+                            var remainingSeconds = seconds % 60;
+                            return $"{minutes}:{remainingSeconds:D2}";
+                        }
+                        else if (clockEl.ValueKind == JsonValueKind.String)
+                        {
+                            var clockStr = clockEl.GetString();
+                            if (!string.IsNullOrWhiteSpace(clockStr))
+                            {
+                                return clockStr;
+                            }
+                        }
                     }
                 }
             }
