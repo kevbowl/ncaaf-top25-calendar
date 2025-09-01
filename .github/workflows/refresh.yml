@@ -44,12 +44,15 @@ jobs:
         run: dotnet run
       - name: Commit changes if any
         run: |
-          if git diff --quiet docs/top25-ncaaf.ics; then
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Check if either file has changes
+          if git diff --quiet docs/top25-ncaaf.ics && git diff --quiet docs/top25-ncaaf-h2h.ics; then
             echo "No changes to commit"
           else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add docs/top25-ncaaf.ics
+            # Add both files if they have changes
+            git add docs/top25-ncaaf.ics docs/top25-ncaaf-h2h.ics
             git commit -m "chore: refresh ICS [skip ci]"
             git push
           fi
