@@ -10,12 +10,12 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250907T023000Z
-DTSTAMP:20250902T063647Z
+DTSTAMP:20250903T041649Z
 DTSTART:20250906T233000Z
 LOCATION:Memorial Stadium (Norman\, OK)\, Norman\, OK\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #14 Michigan at #18 Oklahoma
+SUMMARY:🏈 #15 Michigan at #18 Oklahoma
 TRANSP:OPAQUE
 UID:401752690
 URL:https://www.espn.com/college-football/game/_/gameId/401752690/michigan-
@@ -25,57 +25,57 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250913T223000Z
-DTSTAMP:20250902T063647Z
+DTSTAMP:20250903T041649Z
 DTSTART:20250913T193000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #5 Georgia at #24 Tennessee
+SUMMARY:🏈 #4 Georgia at #22 Tennessee
 TRANSP:OPAQUE
 UID:401752705
 URL:https://www.espn.com/college-football/game/_/gameId/401752705/georgia-t
  ennessee
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: NBC\; Peacock\n\nCalendar by Kevin Bowling\nhttp://kevinbow
- ling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20250914T023000Z
-DTSTAMP:20250902T063647Z
-DTSTART:20250913T233000Z
-LOCATION:Notre Dame Stadium\, Notre Dame\, IN\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #19 Texas A&M at #6 Notre Dame
-TRANSP:OPAQUE
-UID:401752707
-URL:https://www.espn.com/college-football/game/_/gameId/401752707/texas-am-
- notre-dame
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250914T023000Z
-DTSTAMP:20250902T063647Z
+DTSTAMP:20250903T041649Z
 DTSTART:20250913T233000Z
 LOCATION:Tiger Stadium (LA)\, Baton Rouge\, LA\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #15 Florida at #9 LSU
+SUMMARY:🏈 #13 Florida at #3 LSU
 TRANSP:OPAQUE
 UID:401752699
 URL:https://www.espn.com/college-football/game/_/gameId/401752699/florida-l
  su
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:TV: NBC\; Peacock\n\nCalendar by Kevin Bowling\nhttp://kevinbow
+ ling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20250914T023000Z
+DTSTAMP:20250903T041649Z
+DTSTART:20250913T233000Z
+LOCATION:Notre Dame Stadium\, Notre Dame\, IN\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #19 Texas A&M at #9 Notre Dame
+TRANSP:OPAQUE
+UID:401752707
+URL:https://www.espn.com/college-football/game/_/gameId/401752707/texas-am-
+ notre-dame
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20250920T070000Z
-DTSTAMP:20250902T063647Z
+DTSTAMP:20250903T041649Z
 DTSTART:20250920T040000Z
 LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #15 Florida at #10 Miami
+SUMMARY:🏈 #13 Florida at #5 Miami
 TRANSP:OPAQUE
 UID:401752709
 URL:https://www.espn.com/college-football/game/_/gameId/401752709/florida-m
@@ -85,15 +85,30 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20250920T070000Z
-DTSTAMP:20250902T063647Z
+DTSTAMP:20250903T041649Z
 DTSTART:20250920T040000Z
 LOCATION:Memorial Stadium (Bloomington\, IN)\, Bloomington\, IN\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #12 Illinois at #20 Indiana
+SUMMARY:🏈 #11 Illinois at #23 Indiana
 TRANSP:OPAQUE
 UID:401752843
 URL:https://www.espn.com/college-football/game/_/gameId/401752843/illinois-
  indiana
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
+ take? Email me: hello@kevinbowling.me
+DTEND:20250920T070000Z
+DTSTAMP:20250903T041649Z
+DTSTART:20250920T040000Z
+LOCATION:Rice-Eccles Stadium\, Salt Lake City\, UT\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #24 Texas Tech at #25 Utah
+TRANSP:OPAQUE
+UID:401756901
+URL:https://www.espn.com/college-football/game/_/gameId/401756901/texas-tec
+ h-utah
 END:VEVENT
 END:VCALENDAR
