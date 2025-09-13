@@ -7,10 +7,10 @@ X-WR-CALDESC:Top 25 NCAA Football head-to-head matchups only (past 24 hours
   + next 3 weeks).
 X-WR-CALNAME:College Football Top25 H2H
 BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\n1st 9:58: 7-7\n\nCalendar by Kevin Bowling\nhttp://k
- evinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DESCRIPTION:TV: ABC\n\n2nd 7:52: 14-21\n\nCalendar by Kevin Bowling\nhttp:/
+ /kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250913T223000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250913T193000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
@@ -20,10 +20,11 @@ TRANSP:OPAQUE
 UID:401752705
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: The CW Network\n\nCalendar by Kevin Bowling\nhttp://kevinbo
- wling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DESCRIPTION:TV: The CW Network\n\n1st 6:49: 0-7\n\nCalendar by Kevin Bowlin
+ g\nhttp://kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.
+ me
 DTEND:20250913T233000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250913T203000Z
 LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, USA
 SEQUENCE:0
@@ -31,14 +32,12 @@ STATUS:CONFIRMED
 SUMMARY:🏈 #18 South Florida at #5 Miami
 TRANSP:OPAQUE
 UID:401754535
-URL:https://www.espn.com/college-football/game/_/gameId/401754535/south-flo
- rida-miami
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:TV: NBC\; Peacock\n\nCalendar by Kevin Bowling\nhttp://kevinbow
  ling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250914T023000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250913T233000Z
 LOCATION:Notre Dame Stadium\, Notre Dame\, IN\, USA
 SEQUENCE:0
@@ -53,7 +52,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250920T070000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250920T040000Z
 LOCATION:Memorial Stadium (Bloomington\, IN)\, Bloomington\, IN\, USA
 SEQUENCE:0
@@ -68,7 +67,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20250920T070000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250920T040000Z
 LOCATION:Memorial Stadium\, Columbia\, MO\, USA
 SEQUENCE:0
@@ -83,7 +82,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250920T190000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250920T160000Z
 LOCATION:Rice-Eccles Stadium\, Salt Lake City\, UT\, USA
 SEQUENCE:0
@@ -98,7 +97,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250920T223000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250920T193000Z
 LOCATION:Memorial Stadium (Norman\, OK)\, Norman\, OK\, USA
 SEQUENCE:0
@@ -113,7 +112,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20250927T070000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250927T040000Z
 LOCATION:Vaught-Hemingway Stadium\, Oxford\, MS\, USA
 SEQUENCE:0
@@ -128,7 +127,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20250927T070000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250927T040000Z
 LOCATION:Kyle Field\, College Station\, TX\, USA
 SEQUENCE:0
@@ -143,7 +142,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\; Peacock\n\nCalendar by Kevin Bowling\nhttp://kevinbow
  ling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250928T023000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250927T233000Z
 LOCATION:Beaver Stadium\, University Park\, PA\, USA
 SEQUENCE:0
@@ -158,7 +157,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20250928T023000Z
-DTSTAMP:20250913T201302Z
+DTSTAMP:20250913T211054Z
 DTSTART:20250927T233000Z
 LOCATION:Sanford Stadium\, Athens\, GA\, USA
 SEQUENCE:0
