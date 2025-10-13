@@ -7,25 +7,10 @@ X-WR-CALDESC:Top 25 NCAA Football head-to-head matchups only (past 24 hours
   + next 3 weeks).
 X-WR-CALNAME:College Football Top25 H2H
 BEGIN:VEVENT
-DESCRIPTION:TV: CBS\n\nFinal: 30-20\n\nCalendar by Kevin Bowling\nhttp://ke
- vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251011T223000Z
-DTSTAMP:20251012T190950Z
-DTSTART:20251011T193000Z
-LOCATION:Autzen Stadium\, Eugene\, OR\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #7 Indiana at #3 Oregon
-TRANSP:OPAQUE
-UID:401752870
-URL:https://www.espn.com/college-football/game/_/gameId/401752870/indiana-o
- regon
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251018T190000Z
-DTSTAMP:20251012T190950Z
+DTSTAMP:20251013T191824Z
 DTSTART:20251018T160000Z
 LOCATION:FirstBank Stadium\, Nashville\, TN\, USA
 SEQUENCE:0
@@ -40,7 +25,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251018T223000Z
-DTSTAMP:20251012T190950Z
+DTSTAMP:20251013T191824Z
 DTSTART:20251018T193000Z
 LOCATION:Sanford Stadium\, Athens\, GA\, USA
 SEQUENCE:0
@@ -55,7 +40,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251019T023000Z
-DTSTAMP:20251012T190950Z
+DTSTAMP:20251013T191824Z
 DTSTART:20251018T233000Z
 LOCATION:Bryant-Denny Stadium\, Tuscaloosa\, AL\, USA
 SEQUENCE:0
@@ -70,7 +55,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\; Peacock\n\nCalendar by Kevin Bowling\nhttp://kevinbow
  ling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251019T023000Z
-DTSTAMP:20251012T190950Z
+DTSTAMP:20251013T191824Z
 DTSTART:20251018T233000Z
 LOCATION:Notre Dame Stadium\, Notre Dame\, IN\, USA
 SEQUENCE:0
@@ -85,7 +70,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251019T030000Z
-DTSTAMP:20251012T190950Z
+DTSTAMP:20251013T191824Z
 DTSTART:20251019T000000Z
 LOCATION:LaVell Edwards Stadium\, Provo\, UT\, USA
 SEQUENCE:0
@@ -99,22 +84,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251025T070000Z
-DTSTAMP:20251012T190950Z
-DTSTART:20251025T040000Z
-LOCATION:Memorial Stadium (Norman\, OK)\, Norman\, OK\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #5 Ole Miss at #14 Oklahoma
-TRANSP:OPAQUE
-UID:401752750
-URL:https://www.espn.com/college-football/game/_/gameId/401752750/ole-miss-
- oklahoma
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
- take? Email me: hello@kevinbowling.me
-DTEND:20251025T070000Z
-DTSTAMP:20251012T190950Z
+DTSTAMP:20251013T191824Z
 DTSTART:20251025T040000Z
 LOCATION:Tiger Stadium (LA)\, Baton Rouge\, LA\, USA
 SEQUENCE:0
@@ -128,8 +98,23 @@ END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
+DTEND:20251025T190000Z
+DTSTAMP:20251013T191824Z
+DTSTART:20251025T160000Z
+LOCATION:Memorial Stadium (Norman\, OK)\, Norman\, OK\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #5 Ole Miss at #14 Oklahoma
+TRANSP:OPAQUE
+UID:401752750
+URL:https://www.espn.com/college-football/game/_/gameId/401752750/ole-miss-
+ oklahoma
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
+ take? Email me: hello@kevinbowling.me
 DTEND:20251025T070000Z
-DTSTAMP:20251012T190950Z
+DTSTAMP:20251013T191824Z
 DTSTART:20251025T040000Z
 LOCATION:FirstBank Stadium\, Nashville\, TN\, USA
 SEQUENCE:0
@@ -143,9 +128,9 @@ END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
-DTEND:20251025T070000Z
-DTSTAMP:20251012T190950Z
-DTSTART:20251025T040000Z
+DTEND:20251025T190000Z
+DTSTAMP:20251013T191824Z
+DTSTART:20251025T160000Z
 LOCATION:Simmons Bank Liberty Stadium\, Memphis\, TN\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
@@ -154,5 +139,65 @@ TRANSP:OPAQUE
 UID:401762494
 URL:https://www.espn.com/college-football/game/_/gameId/401762494/south-flo
  rida-memphis
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
+ take? Email me: hello@kevinbowling.me
+DTEND:20251101T070000Z
+DTSTAMP:20251013T191824Z
+DTSTART:20251101T040000Z
+LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #14 Oklahoma at #11 Tennessee
+TRANSP:OPAQUE
+UID:401752757
+URL:https://www.espn.com/college-football/game/_/gameId/401752757/oklahoma-
+ tennessee
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
+ take? Email me: hello@kevinbowling.me
+DTEND:20251101T070000Z
+DTSTAMP:20251013T191824Z
+DTSTART:20251101T040000Z
+LOCATION:Memorial Stadium (Lincoln\, NE)\, Lincoln\, NE\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #20 USC at #25 Nebraska
+TRANSP:OPAQUE
+UID:401752892
+URL:https://www.espn.com/college-football/game/_/gameId/401752892/usc-nebra
+ ska
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
+ take? Email me: hello@kevinbowling.me
+DTEND:20251101T070000Z
+DTSTAMP:20251013T191824Z
+DTSTART:20251101T040000Z
+LOCATION:Rice-Eccles Stadium\, Salt Lake City\, UT\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #24 Cincinnati at #23 Utah
+TRANSP:OPAQUE
+UID:401756942
+URL:https://www.espn.com/college-football/game/_/gameId/401756942/cincinnat
+ i-utah
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
+ take? Email me: hello@kevinbowling.me
+DTEND:20251101T190000Z
+DTSTAMP:20251013T191824Z
+DTSTART:20251101T160000Z
+LOCATION:DKR-Texas Memorial Stadium\, Austin\, TX\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #17 Vanderbilt at #21 Texas
+TRANSP:OPAQUE
+UID:401752758
+URL:https://www.espn.com/college-football/game/_/gameId/401752758/vanderbil
+ t-texas
 END:VEVENT
 END:VCALENDAR
