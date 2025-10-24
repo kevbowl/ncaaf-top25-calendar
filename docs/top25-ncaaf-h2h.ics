@@ -10,7 +10,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251025T190000Z
-DTSTAMP:20251024T021548Z
+DTSTAMP:20251024T032639Z
 DTSTART:20251025T160000Z
 LOCATION:Memorial Stadium (Norman\, OK)\, Norman\, OK\, USA
 SEQUENCE:0
@@ -25,7 +25,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
  \nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251025T223000Z
-DTSTAMP:20251024T021548Z
+DTSTAMP:20251024T032639Z
 DTSTART:20251025T193000Z
 LOCATION:FirstBank Stadium\, Nashville\, TN\, USA
 SEQUENCE:0
@@ -40,7 +40,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251026T023000Z
-DTSTAMP:20251024T021548Z
+DTSTAMP:20251024T032639Z
 DTSTART:20251025T233000Z
 LOCATION:Tiger Stadium (LA)\, Baton Rouge\, LA\, USA
 SEQUENCE:0
@@ -55,7 +55,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251101T070000Z
-DTSTAMP:20251024T021548Z
+DTSTAMP:20251024T032639Z
 DTSTART:20251101T040000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
@@ -70,7 +70,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: SEC Network\n\nCalendar by Kevin Bowling\nhttp://kevinbowli
  ng.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251101T190000Z
-DTSTAMP:20251024T021548Z
+DTSTAMP:20251024T032639Z
 DTSTART:20251101T160000Z
 LOCATION:DKR-Texas Memorial Stadium\, Austin\, TX\, USA
 SEQUENCE:0
@@ -85,7 +85,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251108T080000Z
-DTSTAMP:20251024T021548Z
+DTSTAMP:20251024T032639Z
 DTSTART:20251108T050000Z
 LOCATION:Memorial Stadium\, Columbia\, MO\, USA
 SEQUENCE:0
@@ -100,7 +100,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251108T080000Z
-DTSTAMP:20251024T021548Z
+DTSTAMP:20251024T032639Z
 DTSTART:20251108T050000Z
 LOCATION:Bryant-Denny Stadium\, Tuscaloosa\, AL\, USA
 SEQUENCE:0
@@ -115,7 +115,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251108T080000Z
-DTSTAMP:20251024T021548Z
+DTSTAMP:20251024T032639Z
 DTSTART:20251108T050000Z
 LOCATION:Jones AT&T Stadium\, Lubbock\, TX\, USA
 SEQUENCE:0
