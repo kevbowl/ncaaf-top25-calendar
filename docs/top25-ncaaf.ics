@@ -6,188 +6,10 @@ VERSION:2.0
 X-WR-CALDESC:Top 25 NCAA Football games (past 24 hours + next 3 weeks).
 X-WR-CALNAME:College Football Top 25
 BEGIN:VEVENT
-DESCRIPTION:TV: NBC\n\nFinal: 10-48\n\nCalendar by Kevin Bowling\nhttp://ke
- vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251116T033000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251116T003000Z
-LOCATION:Ohio Stadium\, Columbus\, OH\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 UCLA at #1 Ohio State
-TRANSP:OPAQUE
-UID:401752900
-URL:https://www.espn.com/college-football/game/_/gameId/401752900/ucla-ohio
- -state
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\nFinal: 23-21\n\nCalendar by Kevin Bowling\nhttp://ke
- vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251115T233000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251115T203000Z
-LOCATION:Bryant-Denny Stadium\, Tuscaloosa\, AL\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #11 Oklahoma at #4 Alabama
-TRANSP:OPAQUE
-UID:401752765
-URL:https://www.espn.com/college-football/game/_/gameId/401752765/oklahoma-
- alabama
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\nFinal: 10-35\n\nCalendar by Kevin Bowling\nhttp://ke
- vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251116T033000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251116T003000Z
-LOCATION:Sanford Stadium\, Athens\, GA\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #10 Texas at #5 Georgia
-TRANSP:OPAQUE
-UID:401752766
-URL:https://www.espn.com/college-football/game/_/gameId/401752766/texas-geo
- rgia
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: FOX\n\nFinal: 9-48\n\nCalendar by Kevin Bowling\nhttp://kev
- inbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251115T233000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251115T203000Z
-LOCATION:Jones AT&T Stadium\, Lubbock\, TX\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 UCF at #6 Texas Tech
-TRANSP:OPAQUE
-UID:401756953
-URL:https://www.espn.com/college-football/game/_/gameId/401756953/ucf-texas
- -tech
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ESPN\n\nFinal: 24-34\n\nCalendar by Kevin Bowling\nhttp://k
- evinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251116T030000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251116T000000Z
-LOCATION:Vaught-Hemingway Stadium\, Oxford\, MS\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 Florida at #7 Ole Miss
-TRANSP:OPAQUE
-UID:401752769
-URL:https://www.espn.com/college-football/game/_/gameId/401752769/florida-o
- le-miss
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ESPN\n\nFinal: 13-44\n\nCalendar by Kevin Bowling\nhttp://k
- evinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251116T061500Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251116T031500Z
-LOCATION:LaVell Edwards Stadium\, Provo\, UT\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 TCU at #12 BYU
-TRANSP:OPAQUE
-UID:401756950
-URL:https://www.espn.com/college-football/game/_/gameId/401756950/tcu-byu
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ESPN2\n\nFinal: 55-28\n\nCalendar by Kevin Bowling\nhttp://
- kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251116T030000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251116T000000Z
-LOCATION:McLane Stadium\, Waco\, TX\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #13 Utah at Baylor
-TRANSP:OPAQUE
-UID:401756949
-URL:https://www.espn.com/college-football/game/_/gameId/401756949/utah-bayl
- or
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ESPN\n\nFinal: 7-41\n\nCalendar by Kevin Bowling\nhttp://ke
- vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251115T234000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251115T204000Z
-LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 NC State at #15 Miami
-TRANSP:OPAQUE
-UID:401754595
-URL:https://www.espn.com/college-football/game/_/gameId/401754595/nc-state-
- miami
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ACC Network\n\nFinal: 36-34\n\nCalendar by Kevin Bowling\nh
- ttp://kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251115T233000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251115T203000Z
-LOCATION:Alumni Stadium (Chestnut Hill\, MA)\, Chestnut Hill\, MA\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #16 Georgia Tech at Boston College
-TRANSP:OPAQUE
-UID:401754592
-URL:https://www.espn.com/college-football/game/_/gameId/401754592/georgia-t
- ech-boston-college
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: BTN\n\nFinal: 21-26\n\nCalendar by Kevin Bowling\nhttp://ke
- vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251115T233000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251115T203000Z
-LOCATION:Los Angeles Memorial Coliseum\, Los Angeles\, CA\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #21 Iowa at #17 USC
-TRANSP:OPAQUE
-UID:401752907
-URL:https://www.espn.com/college-football/game/_/gameId/401752907/iowa-usc
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ESPN2\n\nFinal: 34-17\n\nCalendar by Kevin Bowling\nhttp://
- kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251115T233500Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251115T203500Z
-LOCATION:Wallace Wade Stadium\, Durham\, NC\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #19 Virginia at Duke
-TRANSP:OPAQUE
-UID:401754593
-URL:https://www.espn.com/college-football/game/_/gameId/401754593/virginia-
- duke
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: SEC Network\n\nFinal: 9-42\n\nCalendar by Kevin Bowling\nht
- tp://kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251116T001500Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251115T211500Z
-LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 New Mexico St at #23 Tennessee
-TRANSP:OPAQUE
-UID:401752771
-URL:https://www.espn.com/college-football/game/_/gameId/401752771/new-mexic
- o-st-tennessee
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T200000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T170000Z
 LOCATION:Ohio Stadium\, Columbus\, OH\, USA
 SEQUENCE:0
@@ -202,7 +24,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: SECN+\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\
  n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T200000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T170000Z
 LOCATION:Kyle Field\, College Station\, TX\, USA
 SEQUENCE:0
@@ -217,7 +39,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T200000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T170000Z
 LOCATION:Memorial Stadium (Norman\, OK)\, Norman\, OK\, USA
 SEQUENCE:0
@@ -232,7 +54,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
  \nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T200000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T170000Z
 LOCATION:Lane Stadium\, Blacksburg\, VA\, USA
 SEQUENCE:0
@@ -247,7 +69,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN2\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\
  n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T200000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T170000Z
 LOCATION:Gerald J. Ford Stadium\, Dallas\, TX\, USA
 SEQUENCE:0
@@ -262,7 +84,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: SEC Network\n\nCalendar by Kevin Bowling\nhttp://kevinbowli
  ng.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T204500Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T174500Z
 LOCATION:Sanford Stadium\, Athens\, GA\, USA
 SEQUENCE:0
@@ -277,7 +99,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: SECN+\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\
  n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T220000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T190000Z
 LOCATION:Bryant-Denny Stadium\, Tuscaloosa\, AL\, USA
 SEQUENCE:0
@@ -292,7 +114,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN+\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\
  n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T230000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T200000Z
 LOCATION:Protective Stadium\, Birmingham\, AL\, USA
 SEQUENCE:0
@@ -307,7 +129,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: CBS\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T233000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T203000Z
 LOCATION:Autzen Stadium\, Eugene\, OR\, USA
 SEQUENCE:0
@@ -322,7 +144,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\; Peacock\n\nCalendar by Kevin Bowling\nhttp://kevinbow
  ling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T233000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T203000Z
 LOCATION:Notre Dame Stadium\, Notre Dame\, IN\, USA
 SEQUENCE:0
@@ -337,7 +159,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T233000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T203000Z
 LOCATION:DKR-Texas Memorial Stadium\, Austin\, TX\, USA
 SEQUENCE:0
@@ -352,7 +174,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
  \nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T233000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T203000Z
 LOCATION:FirstBank Stadium\, Nashville\, TN\, USA
 SEQUENCE:0
@@ -367,7 +189,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FS1\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T233000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T203000Z
 LOCATION:Kinnick Stadium\, Iowa City\, IA\, USA
 SEQUENCE:0
@@ -382,7 +204,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN2\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\
  n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251123T000000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T210000Z
 LOCATION:Rice-Eccles Stadium\, Salt Lake City\, UT\, USA
 SEQUENCE:0
@@ -397,7 +219,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: BTN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251123T000000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251122T210000Z
 LOCATION:SECU Stadium\, College Park\, MD\, USA
 SEQUENCE:0
@@ -412,7 +234,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
  \nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251123T030000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251123T000000Z
 LOCATION:Bobby Dodd Stadium\, Atlanta\, GA\, USA
 SEQUENCE:0
@@ -427,7 +249,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251123T033000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251123T003000Z
 LOCATION:Ben Hill Griffin Stadium\, Gainesville\, FL\, USA
 SEQUENCE:0
@@ -442,7 +264,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251123T040000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251123T010000Z
 LOCATION:Nippert Stadium\, Cincinnati\, OH\, USA
 SEQUENCE:0
@@ -457,7 +279,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251128T200000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251128T170000Z
 LOCATION:Davis Wade Stadium\, Starkville\, MS\, USA
 SEQUENCE:0
@@ -472,7 +294,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251128T200000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251128T170000Z
 LOCATION:David Booth Kansas Memorial Stadium\, Lawrence\, KS\, USA
 SEQUENCE:0
@@ -487,7 +309,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: CBS\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251128T200000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251128T170000Z
 LOCATION:Memorial Stadium (Lincoln\, NE)\, Lincoln\, NE\, USA
 SEQUENCE:0
@@ -502,7 +324,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251128T233000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251128T203000Z
 LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, USA
 SEQUENCE:0
@@ -517,7 +339,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\; Peacock\n\nCalendar by Kevin Bowling\nhttp://kevinbow
  ling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T033000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T003000Z
 LOCATION:Ross-Ade Stadium\, West Lafayette\, IN\, USA
 SEQUENCE:0
@@ -532,7 +354,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T033000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T003000Z
 LOCATION:DKR-Texas Memorial Stadium\, Austin\, TX\, USA
 SEQUENCE:0
@@ -547,7 +369,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Jordan-Hare Stadium\, Auburn\, AL\, USA
 SEQUENCE:0
@@ -562,7 +384,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Milan Puskar Stadium\, Morgantown\, WV\, USA
 SEQUENCE:0
@@ -577,7 +399,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Husky Stadium\, Seattle\, WA\, USA
 SEQUENCE:0
@@ -592,22 +414,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251129T050000Z
-LOCATION:Stanford Stadium\, Stanford\, CA\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #9 Notre Dame at Stanford
-TRANSP:OPAQUE
-UID:401754614
-URL:https://www.espn.com/college-football/game/_/gameId/401754614/notre-dam
- e-stanford
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
- take? Email me: hello@kevinbowling.me
-DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Memorial Stadium (Norman\, OK)\, Norman\, OK\, USA
 SEQUENCE:0
@@ -622,7 +429,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:LaVell Edwards Stadium\, Provo\, UT\, USA
 SEQUENCE:0
@@ -636,7 +443,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
@@ -651,7 +458,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Acrisure Stadium\, Pittsburgh\, PA\, USA
 SEQUENCE:0
@@ -666,7 +473,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Los Angeles Memorial Coliseum\, Los Angeles\, CA\, USA
 SEQUENCE:0
@@ -680,7 +487,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Scott Stadium\, Charlottesville\, VA\, USA
 SEQUENCE:0
@@ -695,22 +502,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
-DTSTART:20251129T050000Z
-LOCATION:L&N Federal Credit Union Stadium\, Louisville\, KY\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 Kentucky at #20 Louisville
-TRANSP:OPAQUE
-UID:401752787
-URL:https://www.espn.com/college-football/game/_/gameId/401752787/kentucky-
- louisville
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
- take? Email me: hello@kevinbowling.me
-DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Raymond James Stadium\, Tampa\, FL\, USA
 SEQUENCE:0
@@ -725,7 +517,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T080000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T050000Z
 LOCATION:Amon G. Carter Stadium\, Fort Worth\, TX\, USA
 SEQUENCE:0
@@ -740,7 +532,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T200000Z
-DTSTAMP:20251116T191058Z
+DTSTAMP:20251117T192034Z
 DTSTART:20251129T170000Z
 LOCATION:Michigan Stadium\, Ann Arbor\, MI\, USA
 SEQUENCE:0
@@ -750,5 +542,35 @@ TRANSP:OPAQUE
 UID:401752921
 URL:https://www.espn.com/college-football/game/_/gameId/401752921/ohio-stat
  e-michigan
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:TV: ACC Network\n\nCalendar by Kevin Bowling\nhttp://kevinbowli
+ ng.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20251129T200000Z
+DTSTAMP:20251117T192034Z
+DTSTART:20251129T170000Z
+LOCATION:L&N Federal Credit Union Stadium\, Louisville\, KY\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 Kentucky at #20 Louisville
+TRANSP:OPAQUE
+UID:401752787
+URL:https://www.espn.com/college-football/game/_/gameId/401752787/kentucky-
+ louisville
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
+ \nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20251130T063000Z
+DTSTAMP:20251117T192034Z
+DTSTART:20251130T033000Z
+LOCATION:Stanford Stadium\, Stanford\, CA\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #9 Notre Dame at Stanford
+TRANSP:OPAQUE
+UID:401754614
+URL:https://www.espn.com/college-football/game/_/gameId/401754614/notre-dam
+ e-stanford
 END:VEVENT
 END:VCALENDAR
