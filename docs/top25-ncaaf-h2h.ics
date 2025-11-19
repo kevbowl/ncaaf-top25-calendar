@@ -7,60 +7,45 @@ X-WR-CALDESC:Top 25 NCAA Football head-to-head matchups only (past 24 hours
   + next 3 weeks).
 X-WR-CALNAME:College Football Top25 H2H
 BEGIN:VEVENT
+DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
+ nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20251122T200000Z
+DTSTAMP:20251119T191601Z
+DTSTART:20251122T170000Z
+LOCATION:Memorial Stadium (Norman\, OK)\, Norman\, OK\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #22 Missouri at #8 Oklahoma
+TRANSP:OPAQUE
+UID:401752778
+URL:https://www.espn.com/college-football/game/_/gameId/401752778/missouri-
+ oklahoma
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:TV: CBS\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251122T233000Z
-DTSTAMP:20251118T191238Z
+DTSTAMP:20251119T191601Z
 DTSTART:20251122T203000Z
 LOCATION:Autzen Stadium\, Eugene\, OR\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #17 USC at #8 Oregon
+SUMMARY:🏈 #15 USC at #7 Oregon
 TRANSP:OPAQUE
 UID:401752911
 URL:https://www.espn.com/college-football/game/_/gameId/401752911/usc-orego
  n
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
- \nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251123T030000Z
-DTSTAMP:20251118T191238Z
-DTSTART:20251123T000000Z
-LOCATION:Bobby Dodd Stadium\, Atlanta\, GA\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #22 Pitt at #16 Georgia Tech
-TRANSP:OPAQUE
-UID:401754601
-URL:https://www.espn.com/college-football/game/_/gameId/401754601/pitt-geor
- gia-tech
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
- nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251123T040000Z
-DTSTAMP:20251118T191238Z
-DTSTART:20251123T010000Z
-LOCATION:Nippert Stadium\, Cincinnati\, OH\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #12 BYU at #25 Cincinnati
-TRANSP:OPAQUE
-UID:401756955
-URL:https://www.espn.com/college-football/game/_/gameId/401756955/byu-cinci
- nnati
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251128T233000Z
-DTSTAMP:20251118T191238Z
+DTSTAMP:20251119T191601Z
 DTSTART:20251128T203000Z
 LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #5 Georgia at #16 Georgia Tech
+SUMMARY:🏈 #4 Georgia at #16 Georgia Tech
 TRANSP:OPAQUE
 UID:401752786
 URL:https://www.espn.com/college-football/game/_/gameId/401752786/georgia-g
@@ -70,37 +55,22 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T033000Z
-DTSTAMP:20251118T191238Z
+DTSTAMP:20251119T191601Z
 DTSTART:20251129T003000Z
 LOCATION:DKR-Texas Memorial Stadium\, Austin\, TX\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #3 Texas A&M at #10 Texas
+SUMMARY:🏈 #3 Texas A&M at #17 Texas
 TRANSP:OPAQUE
 UID:401752792
 URL:https://www.espn.com/college-football/game/_/gameId/401752792/texas-am-
  texas
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
- take? Email me: hello@kevinbowling.me
-DTEND:20251129T080000Z
-DTSTAMP:20251118T191238Z
-DTSTART:20251129T050000Z
-LOCATION:Acrisure Stadium\, Pittsburgh\, PA\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #15 Miami at #22 Pitt
-TRANSP:OPAQUE
-UID:401754611
-URL:https://www.espn.com/college-football/game/_/gameId/401754611/miami-pit
- t
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T200000Z
-DTSTAMP:20251118T191238Z
+DTSTAMP:20251119T191601Z
 DTSTART:20251129T170000Z
 LOCATION:Michigan Stadium\, Ann Arbor\, MI\, USA
 SEQUENCE:0
@@ -115,12 +85,12 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20251129T233000Z
-DTSTAMP:20251118T191238Z
+DTSTAMP:20251119T191601Z
 DTSTART:20251129T203000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #14 Vanderbilt at #23 Tennessee
+SUMMARY:🏈 #14 Vanderbilt at #20 Tennessee
 TRANSP:OPAQUE
 UID:401752791
 URL:https://www.espn.com/college-football/game/_/gameId/401752791/vanderbil
