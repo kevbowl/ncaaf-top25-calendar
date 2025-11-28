@@ -7,10 +7,10 @@ X-WR-CALDESC:Top 25 NCAA Football head-to-head matchups only (past 24 hours
   + next 3 weeks).
 X-WR-CALNAME:College Football Top25 H2H
 BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
- nFind a mistake? Email me: hello@kevinbowling.me
+DESCRIPTION:TV: ABC\n\n2nd 0:00: 13-3\n\nCalendar by Kevin Bowling\nhttp://
+ kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251128T233000Z
-DTSTAMP:20251128T051008Z
+DTSTAMP:20251128T221551Z
 DTSTART:20251128T203000Z
 LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, USA
 SEQUENCE:0
@@ -18,14 +18,12 @@ STATUS:CONFIRMED
 SUMMARY:🏈 #4 Georgia at #23 Georgia Tech
 TRANSP:OPAQUE
 UID:401752786
-URL:https://www.espn.com/college-football/game/_/gameId/401752786/georgia-g
- eorgia-tech
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T033000Z
-DTSTAMP:20251128T051008Z
+DTSTAMP:20251128T221551Z
 DTSTART:20251129T003000Z
 LOCATION:DKR-Texas Memorial Stadium\, Austin\, TX\, USA
 SEQUENCE:0
@@ -40,7 +38,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T050000Z
-DTSTAMP:20251128T051008Z
+DTSTAMP:20251128T221551Z
 DTSTART:20251129T020000Z
 LOCATION:Mountain America Stadium\, Tempe\, AZ\, USA
 SEQUENCE:0
@@ -55,7 +53,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T200000Z
-DTSTAMP:20251128T051008Z
+DTSTAMP:20251128T221551Z
 DTSTART:20251129T170000Z
 LOCATION:Michigan Stadium\, Ann Arbor\, MI\, USA
 SEQUENCE:0
@@ -70,7 +68,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T200000Z
-DTSTAMP:20251128T051008Z
+DTSTAMP:20251128T221551Z
 DTSTART:20251129T170000Z
 LOCATION:Acrisure Stadium\, Pittsburgh\, PA\, USA
 SEQUENCE:0
@@ -85,7 +83,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
  \nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251129T233000Z
-DTSTAMP:20251128T051008Z
+DTSTAMP:20251128T221551Z
 DTSTART:20251129T203000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
