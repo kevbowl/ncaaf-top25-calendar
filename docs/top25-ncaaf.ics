@@ -6,15 +6,30 @@ VERSION:2.0
 X-WR-CALDESC:Top 25 NCAA Football games (past 24 hours + next 3 weeks).
 X-WR-CALNAME:College Football Top 25
 BEGIN:VEVENT
+DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
+ \nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20251206T030000Z
+DTSTAMP:20251203T191755Z
+DTSTART:20251206T000000Z
+LOCATION:Bridgeforth Stadium\, Harrisonburg\, VA\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 Troy at #25 James Madison
+TRANSP:OPAQUE
+UID:401777352
+URL:https://www.espn.com/college-football/game/_/gameId/401777352/troy-jame
+ s-madison
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251206T040000Z
-DTSTAMP:20251202T191539Z
+DTSTAMP:20251203T191755Z
 DTSTART:20251206T010000Z
 LOCATION:Yulman Stadium\, New Orleans\, LA\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 North Texas at #24 Tulane
+SUMMARY:🏈 #24 North Texas at #20 Tulane
 TRANSP:OPAQUE
 UID:401777324
 URL:https://www.espn.com/college-football/game/_/gameId/401777324/north-tex
@@ -24,12 +39,12 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251206T200000Z
-DTSTAMP:20251202T191539Z
+DTSTAMP:20251203T191755Z
 DTSTART:20251206T170000Z
 LOCATION:AT&T Stadium\, Arlington\, TX\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #11 BYU at #5 Texas Tech
+SUMMARY:🏈 #11 BYU at #4 Texas Tech
 TRANSP:OPAQUE
 UID:401777327
 URL:https://www.espn.com/college-football/game/_/gameId/401777327/byu-texas
@@ -39,12 +54,12 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251207T000000Z
-DTSTAMP:20251202T191539Z
+DTSTAMP:20251203T191755Z
 DTSTART:20251206T210000Z
 LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #4 Georgia at #10 Alabama
+SUMMARY:🏈 #3 Georgia at #9 Alabama
 TRANSP:OPAQUE
 UID:401777351
 URL:https://www.espn.com/college-football/game/_/gameId/401777351/georgia-a
@@ -54,7 +69,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251207T040000Z
-DTSTAMP:20251202T191539Z
+DTSTAMP:20251203T191755Z
 DTSTART:20251207T010000Z
 LOCATION:Lucas Oil Stadium\, Indianapolis\, IN\, USA
 SEQUENCE:0
@@ -69,12 +84,12 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251207T040000Z
-DTSTAMP:20251202T191539Z
+DTSTAMP:20251203T191755Z
 DTSTART:20251207T010000Z
 LOCATION:Bank of America Stadium\, Charlotte\, NC\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 Duke at #18 Virginia
+SUMMARY:🏈 Duke at #17 Virginia
 TRANSP:OPAQUE
 UID:401777328
 URL:https://www.espn.com/college-football/game/_/gameId/401777328/duke-virg
