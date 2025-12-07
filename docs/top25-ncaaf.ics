@@ -6,23 +6,10 @@ VERSION:2.0
 X-WR-CALDESC:Top 25 NCAA Football games (past 24 hours + next 3 weeks).
 X-WR-CALNAME:College Football Top 25
 BEGIN:VEVENT
-DESCRIPTION:TV: FOX\n\n4th 5:28: 13-10\n\nCalendar by Kevin Bowling\nhttp:/
+DESCRIPTION:TV: ABC\n\n4th 0:55: 20-13\n\nCalendar by Kevin Bowling\nhttp:/
  /kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251207T040000Z
-DTSTAMP:20251207T043808Z
-DTSTART:20251207T010000Z
-LOCATION:Lucas Oil Stadium\, Indianapolis\, IN\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #2 Indiana at #1 Ohio State
-TRANSP:OPAQUE
-UID:401777353
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\n4th 8:46: 17-10\n\nCalendar by Kevin Bowling\nhttp:/
- /kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251207T040000Z
-DTSTAMP:20251207T043808Z
+DTSTAMP:20251207T052346Z
 DTSTART:20251207T010000Z
 LOCATION:Bank of America Stadium\, Charlotte\, NC\, USA
 SEQUENCE:0
@@ -32,10 +19,25 @@ TRANSP:OPAQUE
 UID:401777328
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:TV: FOX\n\nFinal: 13-10\n\nCalendar by Kevin Bowling\nhttp://ke
+ vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20251207T040000Z
+DTSTAMP:20251207T052346Z
+DTSTART:20251207T010000Z
+LOCATION:Lucas Oil Stadium\, Indianapolis\, IN\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #2 Indiana at #1 Ohio State
+TRANSP:OPAQUE
+UID:401777353
+URL:https://www.espn.com/college-football/game/_/gameId/401777353/indiana-o
+ hio-state
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nFinal: 28-7\n\nCalendar by Kevin Bowling\nhttp://kev
  inbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251207T000000Z
-DTSTAMP:20251207T043808Z
+DTSTAMP:20251207T052346Z
 DTSTART:20251206T210000Z
 LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, USA
 SEQUENCE:0
@@ -50,7 +52,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nFinal: 7-34\n\nCalendar by Kevin Bowling\nhttp://kev
  inbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251206T200000Z
-DTSTAMP:20251207T043808Z
+DTSTAMP:20251207T052346Z
 DTSTART:20251206T170000Z
 LOCATION:AT&T Stadium\, Arlington\, TX\, USA
 SEQUENCE:0
