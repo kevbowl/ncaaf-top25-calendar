@@ -10,7 +10,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FOX\n\nFinal: 13-10\n\nCalendar by Kevin Bowling\nhttp://ke
  vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251207T040000Z
-DTSTAMP:20251207T052346Z
+DTSTAMP:20251207T191110Z
 DTSTART:20251207T010000Z
 LOCATION:Lucas Oil Stadium\, Indianapolis\, IN\, USA
 SEQUENCE:0
@@ -25,7 +25,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nFinal: 28-7\n\nCalendar by Kevin Bowling\nhttp://kev
  inbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251207T000000Z
-DTSTAMP:20251207T052346Z
+DTSTAMP:20251207T191110Z
 DTSTART:20251206T210000Z
 LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, USA
 SEQUENCE:0
@@ -35,20 +35,5 @@ TRANSP:OPAQUE
 UID:401777351
 URL:https://www.espn.com/college-football/game/_/gameId/401777351/georgia-a
  labama
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\nFinal: 7-34\n\nCalendar by Kevin Bowling\nhttp://kev
- inbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251206T200000Z
-DTSTAMP:20251207T052346Z
-DTSTART:20251206T170000Z
-LOCATION:AT&T Stadium\, Arlington\, TX\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #11 BYU at #4 Texas Tech
-TRANSP:OPAQUE
-UID:401777327
-URL:https://www.espn.com/college-football/game/_/gameId/401777327/byu-texas
- -tech
 END:VEVENT
 END:VCALENDAR
