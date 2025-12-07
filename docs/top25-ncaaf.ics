@@ -6,10 +6,36 @@ VERSION:2.0
 X-WR-CALDESC:Top 25 NCAA Football games (past 24 hours + next 3 weeks).
 X-WR-CALNAME:College Football Top 25
 BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\n3rd 10:47: 21-0\n\nCalendar by Kevin Bowling\nhttp:/
- /kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DESCRIPTION:TV: FOX\n\n2nd 13:31: 3-7\n\nCalendar by Kevin Bowling\nhttp://
+ kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20251207T040000Z
+DTSTAMP:20251207T035830Z
+DTSTART:20251207T010000Z
+LOCATION:Lucas Oil Stadium\, Indianapolis\, IN\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #2 Indiana at #1 Ohio State
+TRANSP:OPAQUE
+UID:401777353
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:TV: ABC\n\n2nd 9:48: 7-7\n\nCalendar by Kevin Bowling\nhttp://k
+ evinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20251207T040000Z
+DTSTAMP:20251207T035830Z
+DTSTART:20251207T010000Z
+LOCATION:Bank of America Stadium\, Charlotte\, NC\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 Duke at #17 Virginia
+TRANSP:OPAQUE
+UID:401777328
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:TV: ABC\n\nFinal: 28-7\n\nCalendar by Kevin Bowling\nhttp://kev
+ inbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251207T000000Z
-DTSTAMP:20251207T020803Z
+DTSTAMP:20251207T035830Z
 DTSTART:20251206T210000Z
 LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, USA
 SEQUENCE:0
@@ -17,12 +43,14 @@ STATUS:CONFIRMED
 SUMMARY:🏈 #3 Georgia at #9 Alabama
 TRANSP:OPAQUE
 UID:401777351
+URL:https://www.espn.com/college-football/game/_/gameId/401777351/georgia-a
+ labama
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nFinal: 7-34\n\nCalendar by Kevin Bowling\nhttp://kev
  inbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20251206T200000Z
-DTSTAMP:20251207T020803Z
+DTSTAMP:20251207T035830Z
 DTSTART:20251206T170000Z
 LOCATION:AT&T Stadium\, Arlington\, TX\, USA
 SEQUENCE:0
@@ -32,35 +60,5 @@ TRANSP:OPAQUE
 UID:401777327
 URL:https://www.espn.com/college-football/game/_/gameId/401777327/byu-texas
  -tech
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: FOX\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
- nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251207T040000Z
-DTSTAMP:20251207T020803Z
-DTSTART:20251207T010000Z
-LOCATION:Lucas Oil Stadium\, Indianapolis\, IN\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #2 Indiana at #1 Ohio State
-TRANSP:OPAQUE
-UID:401777353
-URL:https://www.espn.com/college-football/game/_/gameId/401777353/indiana-o
- hio-state
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
- nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20251207T040000Z
-DTSTAMP:20251207T020803Z
-DTSTART:20251207T010000Z
-LOCATION:Bank of America Stadium\, Charlotte\, NC\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 Duke at #17 Virginia
-TRANSP:OPAQUE
-UID:401777328
-URL:https://www.espn.com/college-football/game/_/gameId/401777328/duke-virg
- inia
 END:VEVENT
 END:VCALENDAR
