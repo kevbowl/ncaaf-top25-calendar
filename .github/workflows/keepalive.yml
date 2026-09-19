@@ -1,0 +1,44 @@
+name: Keep Actions enabled
+
+# GitHub disables all scheduled workflows after ~60 days with no repository activity.
+# Commit a tiny stamp at most twice a month, and only when nothing else has landed recently.
+on:
+  schedule:
+    - cron: '0 12 1 * *'   # 1st of the month 12:00 UTC
+    - cron: '0 12 15 * *'  # 15th of the month 12:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepalive
+  cancel-in-progress: true
+
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Commit keepalive stamp if the repo would go stale
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          last=$(git log -1 --format=%ct)
+          now=$(date -u +%s)
+          age_days=$(( (now - last) / 86400 ))
+          echo "Last commit age: ${age_days}d"
+
+          if [ "$age_days" -lt 25 ]; then
+            echo "Recent activity — skipping keep-alive commit"
+            exit 0
+          fi
+
+          mkdir -p .github
+          date -u +%Y-%m-%dT%H:%M:%SZ > .github/keepalive-stamp
+          git add .github/keepalive-stamp
+          git commit -m "chore: keep GitHub Actions enabled [skip ci]"
+          git push

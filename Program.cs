@@ -8,7 +8,9 @@ try
     int currentWeek = EspnClient.TryGetCurrentWeek(initial);
     var query = EspnClient.BuildWeekQuery(initial, DateTimeOffset.UtcNow, upcomingWeekCount: 3, currentWeek);
 
-    Console.WriteLine($"Season {query.SeasonYear} type {query.SeasonType}; weeks {string.Join(", ", query.Weeks)}");
+    Console.WriteLine(
+        $"Season {query.SeasonYear} type {query.SeasonType}; weeks {string.Join(", ", query.Weeks)}" +
+        (query.LookaheadKickoff ? " (kickoff lookahead)" : string.Empty));
 
     var allGames = new List<Game>();
     var h2hGames = new List<Game>();
@@ -32,8 +34,20 @@ try
     string output = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf.ics");
     string h2hOutput = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf-h2h.ics");
 
-    WriteIfNotEmptyWipe(output, allGames, "College Football Top 25");
-    WriteIfNotEmptyWipe(h2hOutput, h2hGames, "College Football Top25 H2H");
+    // Only skip writes when the whole slate is empty (offseason / ESPN gap). A real week with
+    // Top 25 games but no H2H must still replace last year's H2H file.
+    if (allGames.Count == 0)
+    {
+        SkipEmptyWipe(output);
+        SkipEmptyWipe(h2hOutput);
+    }
+    else
+    {
+        IcsWriter.Write(output, allGames, "College Football Top 25");
+        IcsWriter.Write(h2hOutput, h2hGames, "College Football Top25 H2H");
+        Console.WriteLine($"Generated {output} with {allGames.Count} events.");
+        Console.WriteLine($"Generated {h2hOutput} with {h2hGames.Count} H2H events.");
+    }
 }
 catch (Exception ex)
 {
@@ -41,14 +55,13 @@ catch (Exception ex)
     Environment.Exit(1);
 }
 
-static void WriteIfNotEmptyWipe(string path, List<Game> games, string calendarName)
+static void SkipEmptyWipe(string path)
 {
-    if (games.Count == 0 && File.Exists(path) && File.ReadAllText(path).Contains("BEGIN:VEVENT", StringComparison.Ordinal))
+    if (File.Exists(path) && File.ReadAllText(path).Contains("BEGIN:VEVENT", StringComparison.Ordinal))
     {
         Console.WriteLine($"Skipping {path}: ESPN returned 0 events; leaving the existing calendar in place.");
         return;
     }
 
-    IcsWriter.Write(path, games, calendarName);
-    Console.WriteLine($"Generated {path} with {games.Count} events.");
+    Console.WriteLine($"No events for {path} (file is already empty or missing).");
 }

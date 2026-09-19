@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NcaafTop25Calendar.Services
 {
-    public sealed record WeekQuery(int SeasonYear, int SeasonType, IReadOnlyList<int> Weeks);
+    public sealed record WeekQuery(int SeasonYear, int SeasonType, IReadOnlyList<int> Weeks, bool LookaheadKickoff = false);
 
     public sealed class EspnClient : IDisposable
     {
@@ -86,15 +86,16 @@ namespace NcaafTop25Calendar.Services
         }
 
         /// <summary>
-        /// Picks the ESPN calendar that actually contains <paramref name="nowUtc"/> (regular, postseason, or offseason)
-        /// and returns that season type plus the previous week (for the 24h lookback) and the next
-        /// <paramref name="upcomingWeekCount"/> weeks including the current week.
+        /// In-season: the ESPN calendar that contains <paramref name="nowUtc"/> (regular or postseason),
+        /// previous week + the next <paramref name="upcomingWeekCount"/> weeks including current.
+        /// Offseason / gap after the last calendar / before Week 1: regular-season weeks 1..N of the
+        /// upcoming FBS season so the feed restarts at kickoff without waiting for a manual run.
         /// </summary>
         public static WeekQuery BuildWeekQuery(JsonDocument doc, DateTimeOffset nowUtc, int upcomingWeekCount, int fallbackStartWeek)
         {
             int year = TryGetSeasonYear(doc);
             int seasonType = TryGetSeasonType(doc);
-            var weeks = new List<int>();
+            upcomingWeekCount = Math.Max(1, upcomingWeekCount);
 
             try
             {
@@ -103,62 +104,72 @@ namespace NcaafTop25Calendar.Services
                     var league = leagues[0];
                     if (league.TryGetProperty("calendar", out var calendars) && calendars.ValueKind == JsonValueKind.Array)
                     {
-                        JsonElement? matchingCal = null;
+                        JsonElement? regular = null;
+                        JsonElement? post = null;
+                        int matchingType = 0;
+                        DateTimeOffset? regularStart = null;
+                        DateTimeOffset? regularEnd = null;
+
                         foreach (var cal in calendars.EnumerateArray())
                         {
+                            int type = TryReadInt(cal, "value") ?? 0;
                             DateTimeOffset? calStart = cal.TryGetProperty("startDate", out var csd) ? TryParseDate(csd) : null;
                             DateTimeOffset? calEnd = cal.TryGetProperty("endDate", out var ced) ? TryParseDate(ced) : null;
+                            if (type == 2)
+                            {
+                                regular = cal;
+                                regularStart = calStart;
+                                regularEnd = calEnd;
+                            }
+                            else if (type == 3)
+                            {
+                                post = cal;
+                            }
                             if (calStart != null && calEnd != null && nowUtc >= calStart && nowUtc < calEnd)
                             {
-                                matchingCal = cal;
-                                break;
+                                matchingType = type;
                             }
                         }
 
-                        // Fall back to the first calendar that has week entries (regular season).
-                        if (matchingCal == null)
+                        if (matchingType == 2 && regular is JsonElement regularCal)
                         {
-                            foreach (var cal in calendars.EnumerateArray())
-                            {
-                                if (cal.TryGetProperty("entries", out var ents) && ents.ValueKind == JsonValueKind.Array && ents.GetArrayLength() > 0)
-                                {
-                                    matchingCal = cal;
-                                    break;
-                                }
-                            }
+                            var weeks = SelectWeeksFromCalendar(regularCal, nowUtc, upcomingWeekCount, fallbackStartWeek);
+                            return new WeekQuery(year, 2, weeks);
                         }
 
-                        if (matchingCal is JsonElement calEl)
+                        if (matchingType == 3 && post is JsonElement postCal)
                         {
-                            if (calEl.TryGetProperty("value", out var valEl))
-                            {
-                                if (valEl.ValueKind == JsonValueKind.Number)
-                                {
-                                    seasonType = valEl.GetInt32();
-                                }
-                                else if (valEl.ValueKind == JsonValueKind.String && int.TryParse(valEl.GetString(), out var parsedType))
-                                {
-                                    seasonType = parsedType;
-                                }
-                            }
-
-                            weeks.AddRange(SelectWeeksFromCalendar(calEl, nowUtc, upcomingWeekCount, fallbackStartWeek));
+                            var weeks = SelectWeeksFromCalendar(postCal, nowUtc, upcomingWeekCount, fallbackStartWeek);
+                            return new WeekQuery(year, 3, weeks);
                         }
+
+                        // Offseason, mid-winter gap, or the weeks before kickoff: poll Week 1 of the next FBS season.
+                        int kickoffYear = (regularStart != null && nowUtc < regularStart) ? year : year + 1;
+                        if (regularEnd != null && nowUtc < regularEnd && kickoffYear > year)
+                        {
+                            kickoffYear = year;
+                        }
+                        return new WeekQuery(kickoffYear, 2, KickoffWeeks(upcomingWeekCount), LookaheadKickoff: true);
                     }
                 }
             }
             catch { }
 
-            if (weeks.Count == 0)
+            var fallback = new List<int>();
+            int start = Math.Max(1, fallbackStartWeek - 1);
+            for (int i = start; i < fallbackStartWeek + upcomingWeekCount; i++)
             {
-                int start = Math.Max(1, fallbackStartWeek - 1);
-                for (int i = start; i < fallbackStartWeek + upcomingWeekCount; i++)
-                {
-                    if (i > 0) weeks.Add(i);
-                }
+                if (i > 0) fallback.Add(i);
             }
+            return new WeekQuery(year, seasonType, fallback);
+        }
 
-            return new WeekQuery(year, seasonType, weeks);
+        public static IReadOnlyList<int> KickoffWeeks(int upcomingWeekCount)
+        {
+            upcomingWeekCount = Math.Max(1, upcomingWeekCount);
+            var weeks = new List<int>(upcomingWeekCount);
+            for (int i = 1; i <= upcomingWeekCount; i++) weeks.Add(i);
+            return weeks;
         }
 
         public static IReadOnlyList<int> GetNextWeeks(JsonDocument doc, DateTimeOffset nowUtc, int count, int fallbackStartWeek)
@@ -212,6 +223,14 @@ namespace NcaafTop25Calendar.Services
             }
 
             return result;
+        }
+
+        private static int? TryReadInt(JsonElement el, string name)
+        {
+            if (!el.TryGetProperty(name, out var v)) return null;
+            if (v.ValueKind == JsonValueKind.Number) return v.GetInt32();
+            if (v.ValueKind == JsonValueKind.String && int.TryParse(v.GetString(), out var parsed)) return parsed;
+            return null;
         }
 
         private static DateTimeOffset? TryParseDate(JsonElement el)
