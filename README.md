@@ -7,6 +7,8 @@ Generates iCal (.ics) files with Top-25 NCAA Football matchups for the past 24 h
 - **All Top 25 Games**: `https://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf.ics`
 - **Top 25 Head-to-Head Only**: `https://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf-h2h.ics`
 
+You can subscribe to both. H2H is ranked-vs-ranked only and stays visible in Google if you uncheck the 60-game calendar (they are separate calendars).
+
 ## API
 
 - ESPN Scoreboard API: `https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard`
@@ -57,7 +59,7 @@ Output:
 
 ## Automated Updates
 
-The calendar automatically refreshes with an optimized schedule:
+The calendar automatically refreshes with an optimized schedule. Empty offseason fetches do not wipe a populated calendar. A keep-alive job keeps GitHub Actions from going to sleep. A daily refresh from mid-August through mid-September starts the next season.
 
 *Note: [+1] indicates the following day, DST = Daylight Saving Time*
 
