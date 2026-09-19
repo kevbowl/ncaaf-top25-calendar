@@ -42,6 +42,14 @@ namespace NcaafTop25Calendar.Services
             return string.Join("\r\n", lines);
         }
 
+        public static string EventUid(string gameId, bool headToHead)
+        {
+            string id = string.IsNullOrWhiteSpace(gameId) ? "unknown" : gameId.Trim();
+            return headToHead
+                ? $"{id}@h2h.ncaaf-top25-calendar"
+                : $"{id}@ncaaf-top25-calendar";
+        }
+
         public static void Write(string filePath, IEnumerable<Game> games, string calendarName)
         {
             var calendar = new Calendar
@@ -52,16 +60,10 @@ namespace NcaafTop25Calendar.Services
                 ProductId = "-//ncaaf-top25-calendar//EN"
             };
             
-            // Set appropriate description based on calendar type
-            string calendarDescription;
-            if (calendarName.Contains("H2H", StringComparison.OrdinalIgnoreCase))
-            {
-                calendarDescription = "Top 25 NCAA Football head-to-head matchups only (past 24 hours + next 3 weeks).";
-            }
-            else
-            {
-                calendarDescription = "Top 25 NCAA Football games (past 24 hours + next 3 weeks).";
-            }
+            bool headToHead = calendarName.Contains("H2H", StringComparison.OrdinalIgnoreCase);
+            string calendarDescription = headToHead
+                ? "Top 25 NCAA Football head-to-head matchups only (past 24 hours + next 3 weeks)."
+                : "Top 25 NCAA Football games (past 24 hours + next 3 weeks).";
             
             // Friendly calendar name and description for clients like Google/Apple
             calendar.Properties.Add(new CalendarProperty("X-WR-CALNAME", calendarName));
@@ -70,7 +72,7 @@ namespace NcaafTop25Calendar.Services
             {
                 var ev = new CalendarEvent
                 {
-                    Uid = g.Id,
+                    Uid = EventUid(g.Id, headToHead),
                     Summary = g.BuildTitle(),
                     DtStart = new CalDateTime(g.StartUtc.UtcDateTime, "UTC"),
                     DtEnd = new CalDateTime(g.EndUtc.UtcDateTime, "UTC"),
