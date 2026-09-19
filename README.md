@@ -1,69 +1,71 @@
 # College Football Top 25 Calendar
 
-Generates iCal (.ics) files with Top-25 NCAA Football matchups for the past 24 hours and next 3 weeks using ESPN's scoreboard API. Now includes live game status, scores, and a separate Head-to-Head calendar for Top 25 vs Top 25 matchups.
+Two live iCal feeds of NCAA football games involving Top 25 teams (past 24 hours plus the next three weeks), with ranks, TV, and scores when a game is live or final.
 
-## Subscribe to Calendars
+You do not need a GitHub account or anything installed. Subscribe in your calendar app; the feeds update on their own.
 
-- **All Top 25 Games**: `https://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf.ics`
-- **Top 25 Head-to-Head Only**: `https://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf-h2h.ics`
+## Calendars
 
-You can subscribe to both. H2H is ranked-vs-ranked only and stays visible in Google if you uncheck the 60-game calendar (they are separate calendars).
+- **All Top 25 games:** [https://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf.ics](https://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf.ics)
+- **Head-to-head only** (ranked vs ranked): [https://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf-h2h.ics](https://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf-h2h.ics)
 
-## API
+You can subscribe to both. They are separate calendars, so Head-to-head stays visible in Google if you hide the full Top 25 calendar.
 
-- ESPN Scoreboard API: `https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard`
-- Community reference: [pseudo-r/Public-ESPN-API](https://github.com/pseudo-r/Public-ESPN-API)
+On Apple Calendar you can also use `webcal://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf.ics` and `webcal://kevbowl.github.io/ncaaf-top25-calendar/top25-ncaaf-h2h.ics`.
 
-## Prerequisites
+### Google Calendar
 
-- .NET SDK (tested with .NET 9)
+1. Open [Google Calendar](https://calendar.google.com) on the web.
+2. Next to **Other calendars**, open the **+** menu and choose **From URL**.
+3. Paste one of the `https://` links above and click **Add calendar**.
+4. Repeat for the other feed if you want both.
 
-## Setup
+### Apple Calendar
+
+1. **File → New Calendar Subscription…** (macOS) or **Calendars → Add Calendar → Add Subscription Calendar** (iOS).
+2. Paste an `https://` or `webcal://` link above and subscribe.
+3. Repeat for the other feed if you want both.
+
+### Outlook
+
+1. Open Outlook on the web (or the desktop calendar).
+2. **Add calendar → Subscribe from web**.
+3. Paste an `https://` link above and subscribe.
+4. Repeat for the other feed if you want both.
+
+## Run it yourself
+
+Clone this repo, restore, and run (requires the .NET 9 SDK):
 
 ```bash
-cd /Users/kevin.bowling/Projects/ncaaf-top25-calendar
- dotnet restore
+git clone https://github.com/kevbowl/ncaaf-top25-calendar.git
+cd ncaaf-top25-calendar
+dotnet restore
+dotnet run
 ```
 
-## Run
+Writes:
 
-```bash
- dotnet run
-```
+- `docs/top25-ncaaf.ics` — all Top 25 games
+- `docs/top25-ncaaf-h2h.ics` — ranked vs ranked only
 
-Output: 
-- `docs/top25-ncaaf.ics` - All Top 25 games (past 24h + next 3 weeks)
-- `docs/top25-ncaaf-h2h.ics` - Top 25 vs Top 25 matchups only (past 24h + next 3 weeks)
+### What’s in an event
 
-## Features
+- Either team has AP rank 1–25 (`curatedRank.current`).
+- Window: past 24 hours plus the next three weeks.
+- Title like `🏈 #6 Washington at #9 Auburn` (ranks above 25 omitted).
+- Location: venue, city, state, country.
+- Description: TV when known, live quarter/clock and score, or final score.
 
-### Game Information
-- Filters games where either team has `curatedRank.current` between 1 and 25
-- **Time Window**: Includes games from past 24 hours and next 3 weeks (not just upcoming)
-- **Live Game Status**: Shows current quarter, time remaining, and scores for games in progress
-- **Final Scores**: Displays final scores for completed games
-- **Upcoming Games**: Clean display for games that haven't started yet (no scores shown)
+Calendar names: **College Football Top 25** and **College Football Top25 H2H**.
 
-### Calendar Details
-- **Title format**: `🏈 #6 Washington at #9 Auburn` (ranks included when available; >25 hidden)
-- **Location format**: `Venue, City, State, Country` (comma-separated)
-- **Description includes**:
-  - TV broadcast information when available
-  - Live game status and scores (e.g., "3rd 12:34: 24-31")
-  - Final scores (e.g., "Final: 14-42")
-  - Calendar attribution and contact information
+### Refresh schedule
 
-### Calendar Names & Descriptions
-- **Main Calendar**: "College Football Top 25" - "Top 25 NCAA Football games (past 24 hours + next 3 weeks)."
-- **H2H Calendar**: "College Football Top25 H2H" - "Top 25 NCAA Football head-to-head matchups only (past 24 hours + next 3 weeks)."
+GitHub Actions rebuilds the feeds. Empty offseason fetches do not wipe a populated calendar. A keep-alive job keeps Actions from going to sleep. Daily runs from mid-August through mid-September pick up the next season.
 
-## Automated Updates
+*Note: [+1] is the following day. DST = Daylight Saving Time.*
 
-The calendar automatically refreshes with an optimized schedule. Empty offseason fetches do not wipe a populated calendar. A keep-alive job keeps GitHub Actions from going to sleep. A daily refresh from mid-August through mid-September starts the next season.
-
-*Note: [+1] indicates the following day, DST = Daylight Saving Time*
-
-### During Game Times (Every Hour)
+#### During game times (every hour)
 
 | **Day** | **USA ET** | **UTC** | **SGT** |
 |:--------|:-----------|:--------|:--------|
@@ -71,7 +73,7 @@ The calendar automatically refreshes with an optimized schedule. Empty offseason
 | **Fri** | **6pm-2am**[*+1*] (*DST*)<br/>**5pm-1am**[*+1*] (*Standard*) | **10pm-6am**[*+1*] | **6am-2pm**[*+1*] |
 | **Sat** | **12pm-2am**[*+1*] (*DST*)<br/>**11am-1am**[*+1*] (*Standard*) | **4pm-6am**[*+1*] | **12am-2pm**[*+1*] |
 
-### During Off-Hours (Once Daily)
+#### Off-hours (once daily)
 
 | **Day** | **USA ET** | **UTC** | **SGT** |
 |:--------|:-----------|:--------|:--------|
@@ -80,14 +82,7 @@ The calendar automatically refreshes with an optimized schedule. Empty offseason
 | **Tue** | **3pm** (*DST*)<br/>**2pm** (*Standard*) | **7pm** | **3am**[*+1*] |
 | **Wed** | **3pm** (*DST*)<br/>**2pm** (*Standard*) | **7pm** | **3am**[*+1*] |
 
-## Technical Details
-
-- Uses Ical.Net for calendar generation
-- Implements Ical.Net for robust iCal compliance
-- GitHub Actions workflow with optimized cron scheduling
-- ESPN API integration for live data
-- Score and game status extraction from API responses
-- Enhanced game status detection for better ESPN data parsing
+Built with Ical.Net against ESPN’s scoreboard API.
 
 ## Sources
 
