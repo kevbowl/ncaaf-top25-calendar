@@ -42,6 +42,20 @@ namespace NcaafTop25Calendar.Services
             return string.Join("\r\n", lines);
         }
 
+        /// <summary>
+        /// Distinct, Google-safe UIDs. H2H is a subset of the same games but must remain
+        /// independently togglable, so the UID cannot match the full feed. Use a real FQDN
+        /// (kevbowl.github.io). An unqualified host like @ncaaf-top25-calendar imports as
+        /// zero events in Google Calendar.
+        /// </summary>
+        public static string EventUid(string gameId, bool headToHead)
+        {
+            string id = string.IsNullOrWhiteSpace(gameId) ? "unknown" : gameId.Trim();
+            return headToHead
+                ? $"{id}-h2h@kevbowl.github.io"
+                : $"{id}@kevbowl.github.io";
+        }
+
         public static void Write(string filePath, IEnumerable<Game> games, string calendarName)
         {
             var calendar = new Calendar
@@ -52,8 +66,9 @@ namespace NcaafTop25Calendar.Services
                 ProductId = "-//ncaaf-top25-calendar//EN"
             };
             
+            bool headToHead = calendarName.Contains("H2H", StringComparison.OrdinalIgnoreCase);
             string calendarDescription;
-            if (calendarName.Contains("H2H", StringComparison.OrdinalIgnoreCase))
+            if (headToHead)
             {
                 calendarDescription = "Top 25 NCAA Football head-to-head matchups only (past 24 hours + next 3 weeks).";
             }
@@ -68,8 +83,7 @@ namespace NcaafTop25Calendar.Services
             {
                 var ev = new CalendarEvent
                 {
-                    // Shared ESPN id on both feeds (H2H is a subset). Google rejects UID@unqualified-host.
-                    Uid = g.Id,
+                    Uid = EventUid(g.Id, headToHead),
                     Summary = g.BuildTitle(),
                     DtStart = new CalDateTime(g.StartUtc.UtcDateTime, "UTC"),
                     DtEnd = new CalDateTime(g.EndUtc.UtcDateTime, "UTC"),

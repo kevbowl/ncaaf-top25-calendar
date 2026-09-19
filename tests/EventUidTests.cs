@@ -7,7 +7,34 @@ namespace NcaafTop25Calendar.Tests;
 public class EventUidTests
 {
     [Fact]
-    public void Full_and_h2h_share_the_espn_game_id()
+    public void Full_and_h2h_uids_are_distinct_and_use_github_io_fqdn()
+    {
+        const string espnId = "401856688";
+        string full = IcsWriter.EventUid(espnId, headToHead: false);
+        string h2h = IcsWriter.EventUid(espnId, headToHead: true);
+
+        Assert.Equal("401856688@kevbowl.github.io", full);
+        Assert.Equal("401856688-h2h@kevbowl.github.io", h2h);
+        Assert.NotEqual(full, h2h);
+        Assert.Contains("@kevbowl.github.io", full);
+        Assert.Contains("@kevbowl.github.io", h2h);
+        Assert.DoesNotContain("@ncaaf-top25-calendar", full);
+        Assert.DoesNotContain("@ncaaf-top25-calendar", h2h);
+    }
+
+    [Fact]
+    public void Uids_are_stable_across_calls()
+    {
+        Assert.Equal(
+            IcsWriter.EventUid("401856688", headToHead: true),
+            IcsWriter.EventUid("401856688", headToHead: true));
+        Assert.Equal(
+            IcsWriter.EventUid("401856688", headToHead: false),
+            IcsWriter.EventUid("401856688", headToHead: false));
+    }
+
+    [Fact]
+    public void Written_ics_uses_fqdn_uids_so_google_can_toggle_calendars()
     {
         var game = new Game
         {
@@ -31,11 +58,11 @@ public class EventUidTests
 
             string fullIcs = File.ReadAllText(fullPath);
             string h2hIcs = File.ReadAllText(h2hPath);
-            Assert.Contains("UID:401856688\r\n", fullIcs);
-            Assert.Contains("UID:401856688\r\n", h2hIcs);
-            Assert.DoesNotContain("@ncaaf-top25-calendar", fullIcs);
-            Assert.DoesNotContain("@h2h.ncaaf-top25-calendar", h2hIcs);
-            Assert.DoesNotContain("h2h-401856688", h2hIcs);
+            Assert.Contains("UID:401856688@kevbowl.github.io\r\n", fullIcs);
+            Assert.Contains("UID:401856688-h2h@kevbowl.github.io\r\n", h2hIcs);
+            Assert.DoesNotContain("UID:401856688\r\n", fullIcs);
+            Assert.DoesNotContain("UID:401856688\r\n", h2hIcs);
+            Assert.DoesNotContain("@ncaaf-top25-calendar", fullIcs + h2hIcs);
         }
         finally
         {
