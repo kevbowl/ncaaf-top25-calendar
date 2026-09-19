@@ -5,36 +5,50 @@ try
 {
     using var espn = new EspnClient();
     var initial = await espn.GetInitialScoreboardAsync();
-    int seasonYear = EspnClient.TryGetSeasonYear(initial);
     int currentWeek = EspnClient.TryGetCurrentWeek(initial);
-    var weeks = EspnClient.GetNextWeeks(initial, DateTimeOffset.UtcNow, 3, currentWeek);
+    var query = EspnClient.BuildWeekQuery(initial, DateTimeOffset.UtcNow, upcomingWeekCount: 3, currentWeek);
+
+    Console.WriteLine($"Season {query.SeasonYear} type {query.SeasonType}; weeks {string.Join(", ", query.Weeks)}");
 
     var allGames = new List<Game>();
     var h2hGames = new List<Game>();
-    
-    foreach (var wk in weeks)
+    var seen = new HashSet<string>();
+    var seenH2H = new HashSet<string>();
+
+    foreach (var wk in query.Weeks)
     {
-        var weekDoc = await espn.GetWeekScoreboardAsync(seasonYear, wk);
-        var weekGames = GameMapper.MapTop25Upcoming(weekDoc, DateTimeOffset.UtcNow).ToList();
-        allGames.AddRange(weekGames);
-        
-        // Also collect H2H games (both teams must be Top 25)
-        var weekH2H = GameMapper.MapTop25HeadToHead(weekDoc, DateTimeOffset.UtcNow).ToList();
-        h2hGames.AddRange(weekH2H);
+        var weekDoc = await espn.GetWeekScoreboardAsync(query.SeasonYear, query.SeasonType, wk);
+        foreach (var game in GameMapper.MapTop25Upcoming(weekDoc, DateTimeOffset.UtcNow))
+        {
+            if (seen.Add(game.Id)) allGames.Add(game);
+        }
+
+        foreach (var game in GameMapper.MapTop25HeadToHead(weekDoc, DateTimeOffset.UtcNow))
+        {
+            if (seenH2H.Add(game.Id)) h2hGames.Add(game);
+        }
     }
 
-    // Generate regular Top 25 calendar
     string output = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf.ics");
-    IcsWriter.Write(output, allGames, "College Football Top 25");
-    Console.WriteLine($"Generated {output} with {allGames.Count} events.");
-
-    // Generate H2H calendar
     string h2hOutput = Path.Combine(Directory.GetCurrentDirectory(), "docs", "top25-ncaaf-h2h.ics");
-    IcsWriter.Write(h2hOutput, h2hGames, "College Football Top25 H2H");
-    Console.WriteLine($"Generated {h2hOutput} with {h2hGames.Count} H2H events.");
+
+    WriteIfNotEmptyWipe(output, allGames, "College Football Top 25");
+    WriteIfNotEmptyWipe(h2hOutput, h2hGames, "College Football Top25 H2H");
 }
 catch (Exception ex)
 {
     Console.Error.WriteLine($"Error: {ex.Message}");
     Environment.Exit(1);
+}
+
+static void WriteIfNotEmptyWipe(string path, List<Game> games, string calendarName)
+{
+    if (games.Count == 0 && File.Exists(path) && File.ReadAllText(path).Contains("BEGIN:VEVENT", StringComparison.Ordinal))
+    {
+        Console.WriteLine($"Skipping {path}: ESPN returned 0 events; leaving the existing calendar in place.");
+        return;
+    }
+
+    IcsWriter.Write(path, games, calendarName);
+    Console.WriteLine($"Generated {path} with {games.Count} events.");
 }

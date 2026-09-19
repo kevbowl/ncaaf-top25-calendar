@@ -14,6 +14,8 @@ on:
     - cron: '0 19 * * 1'      # Monday 3pm ET
     - cron: '0 19 * * 2'      # Tuesday 3pm ET
     - cron: '0 19 * * 3'      # Wednesday 3pm ET
+    # Keep the workflow enabled: GitHub disables scheduled jobs after 60 days with no repo activity.
+    - cron: '0 12 1 * *'      # monthly keep-alive
   workflow_dispatch:
   push:
     paths:
@@ -47,14 +49,34 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Check if either file has changes
-          if git diff --quiet docs/top25-ncaaf.ics && git diff --quiet docs/top25-ncaaf-h2h.ics; then
-            echo "No changes to commit"
-          else
-            # Add both files if they have changes
-            git add docs/top25-ncaaf.ics docs/top25-ncaaf-h2h.ics
+          date -u +%Y-%m-%dT%H:%M:%SZ > docs/last-refresh.txt
+
+          ics_changed=0
+          git diff --quiet HEAD -- docs/top25-ncaaf.ics docs/top25-ncaaf-h2h.ics || ics_changed=1
+
+          if [ "$ics_changed" -eq 1 ]; then
+            git add docs/top25-ncaaf.ics docs/top25-ncaaf-h2h.ics docs/last-refresh.txt
             git commit -m "chore: refresh ICS [skip ci]"
             git push
+            exit 0
           fi
+
+          # ICS unchanged: commit a keep-alive stamp at most every 21 days so GitHub
+          # does not disable scheduled workflows after 60 days of inactivity.
+          age_days=999
+          if git cat-file -e HEAD:docs/last-refresh.txt 2>/dev/null; then
+            last=$(git show HEAD:docs/last-refresh.txt | tr -d '\n')
+            last_epoch=$(date -u -d "$last" +%s 2>/dev/null || echo 0)
+            now_epoch=$(date -u +%s)
+            age_days=$(( (now_epoch - last_epoch) / 86400 ))
+          fi
+          if [ "$age_days" -lt 21 ]; then
+            echo "ICS unchanged; keep-alive is ${age_days}d old — skipping commit"
+            git checkout -- docs/last-refresh.txt 2>/dev/null || rm -f docs/last-refresh.txt
+            exit 0
+          fi
+          git add docs/last-refresh.txt
+          git commit -m "chore: keep-alive refresh stamp [skip ci]"
+          git push
 
 
