@@ -7,10 +7,23 @@ X-WR-CALDESC:Top 25 NCAA Football head-to-head matchups only (past 24 hours
   + next 3 weeks).
 X-WR-CALNAME:College Football Top25 H2H
 BEGIN:VEVENT
+DESCRIPTION:TV: ABC\n\n3rd 6:36: 14-24\n\nCalendar by Kevin Bowling\nhttp:/
+ /kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20260920T023000Z
+DTSTAMP:20260920T021233Z
+DTSTART:20260919T233000Z
+LOCATION:Vaught-Hemingway Stadium\, Oxford\, MS\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #7 LSU at #8 Ole Miss
+TRANSP:OPAQUE
+UID:401856688-h2h@kevbowl.github.io
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:TV: ESPN2\n\nFinal: 31-41\n\nCalendar by Kevin Bowling\nhttp://
  kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260919T223000Z
-DTSTAMP:20260919T235441Z
+DTSTAMP:20260920T021233Z
 DTSTART:20260919T193000Z
 LOCATION:L&N Federal Credit Union Stadium\, Louisville\, KY\, USA
 SEQUENCE:0
@@ -24,38 +37,8 @@ END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20260920T023000Z
-DTSTAMP:20260919T235441Z
-DTSTART:20260919T233000Z
-LOCATION:Vaught-Hemingway Stadium\, Oxford\, MS\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #7 LSU at #8 Ole Miss
-TRANSP:OPAQUE
-UID:401856688-h2h@kevbowl.github.io
-URL:https://www.espn.com/college-football/game/_/gameId/401856688/lsu-ole-m
- iss
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: FOX\n\nFinal: 26-28\n\nCalendar by Kevin Bowling\nhttp://ke
- vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20260919T030000Z
-DTSTAMP:20260919T235441Z
-DTSTART:20260919T000000Z
-LOCATION:Galaxy Stadium\, Lubbock\, TX\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #22 Houston at #13 Texas Tech
-TRANSP:OPAQUE
-UID:401856811-h2h@kevbowl.github.io
-URL:https://www.espn.com/college-football/game/_/gameId/401856811/houston-t
- exas-tech
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
- nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260926T190000Z
-DTSTAMP:20260919T235441Z
+DTSTAMP:20260920T021233Z
 DTSTART:20260926T160000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
@@ -70,7 +53,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20260926T223000Z
-DTSTAMP:20260919T235441Z
+DTSTAMP:20260920T021233Z
 DTSTART:20260926T193000Z
 LOCATION:Sanford Stadium\, Athens\, GA\, USA
 SEQUENCE:0
@@ -85,7 +68,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: CBS\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260926T223000Z
-DTSTAMP:20260919T235441Z
+DTSTAMP:20260920T021233Z
 DTSTART:20260926T193000Z
 LOCATION:Michigan Stadium\, Ann Arbor\, MI\, USA
 SEQUENCE:0
@@ -100,7 +83,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260927T023000Z
-DTSTAMP:20260919T235441Z
+DTSTAMP:20260920T021233Z
 DTSTART:20260926T233000Z
 LOCATION:Tiger Stadium (LA)\, Baton Rouge\, LA\, USA
 SEQUENCE:0
@@ -115,7 +98,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260927T023000Z
-DTSTAMP:20260919T235441Z
+DTSTAMP:20260920T021233Z
 DTSTART:20260926T233000Z
 LOCATION:Los Angeles Memorial Coliseum\, Los Angeles\, CA\, USA
 SEQUENCE:0
@@ -130,7 +113,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261003T070000Z
-DTSTAMP:20260919T235441Z
+DTSTAMP:20260920T021233Z
 DTSTART:20261003T040000Z
 LOCATION:Kinnick Stadium\, Iowa City\, IA\, USA
 SEQUENCE:0
