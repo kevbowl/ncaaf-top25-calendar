@@ -10,7 +10,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nFinal: 24-32\n\nCalendar by Kevin Bowling\nhttp://ke
  vinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260920T023000Z
-DTSTAMP:20260920T080120Z
+DTSTAMP:20260920T211132Z
 DTSTART:20260919T233000Z
 LOCATION:Vaught-Hemingway Stadium\, Oxford\, MS\, USA
 SEQUENCE:0
@@ -22,60 +22,45 @@ URL:https://www.espn.com/college-football/game/_/gameId/401856688/lsu-ole-m
  iss
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: ESPN2\n\nFinal: 31-41\n\nCalendar by Kevin Bowling\nhttp://
- kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20260919T223000Z
-DTSTAMP:20260920T080120Z
-DTSTART:20260919T193000Z
-LOCATION:L&N Federal Credit Union Stadium\, Louisville\, KY\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #16 SMU at #23 Louisville
-TRANSP:OPAQUE
-UID:401858230-h2h@kevbowl.github.io
-URL:https://www.espn.com/college-football/game/_/gameId/401858230/smu-louis
- ville
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260926T190000Z
-DTSTAMP:20260920T080120Z
+DTSTAMP:20260920T211132Z
 DTSTART:20260926T160000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #1 Texas at #15 Tennessee
+SUMMARY:🏈 #1 Texas at #14 Tennessee
 TRANSP:OPAQUE
 UID:401856704-h2h@kevbowl.github.io
 URL:https://www.espn.com/college-football/game/_/gameId/401856704/texas-ten
  nessee
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
- \nFind a mistake? Email me: hello@kevinbowling.me
+DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
+ nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260926T223000Z
-DTSTAMP:20260920T080120Z
+DTSTAMP:20260920T211132Z
 DTSTART:20260926T193000Z
-LOCATION:Sanford Stadium\, Athens\, GA\, USA
+LOCATION:Ben Hill Griffin Stadium\, Gainesville\, FL\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #24 Oklahoma at #2 Georgia
+SUMMARY:🏈 #4 Ole Miss at #21 Florida
 TRANSP:OPAQUE
-UID:401856700-h2h@kevbowl.github.io
-URL:https://www.espn.com/college-football/game/_/gameId/401856700/oklahoma-
- georgia
+UID:401856699-h2h@kevbowl.github.io
+URL:https://www.espn.com/college-football/game/_/gameId/401856699/ole-miss-
+ florida
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:TV: CBS\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260926T223000Z
-DTSTAMP:20260920T080120Z
+DTSTAMP:20260920T211132Z
 DTSTART:20260926T193000Z
 LOCATION:Michigan Stadium\, Ann Arbor\, MI\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #18 Iowa at #19 Michigan
+SUMMARY:🏈 #17 Iowa at #18 Michigan
 TRANSP:OPAQUE
 UID:401858463-h2h@kevbowl.github.io
 URL:https://www.espn.com/college-football/game/_/gameId/401858463/iowa-mich
@@ -85,12 +70,12 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260927T023000Z
-DTSTAMP:20260920T080120Z
+DTSTAMP:20260920T211132Z
 DTSTART:20260926T233000Z
 LOCATION:Tiger Stadium (LA)\, Baton Rouge\, LA\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #9 Texas A&M at #7 LSU
+SUMMARY:🏈 #23 Texas A&M at #10 LSU
 TRANSP:OPAQUE
 UID:401856702-h2h@kevbowl.github.io
 URL:https://www.espn.com/college-football/game/_/gameId/401856702/texas-am-
@@ -100,30 +85,75 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20260927T023000Z
-DTSTAMP:20260920T080120Z
+DTSTAMP:20260920T211132Z
 DTSTART:20260926T233000Z
 LOCATION:Los Angeles Memorial Coliseum\, Los Angeles\, CA\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #21 Oregon at #12 USC
+SUMMARY:🏈 #20 Oregon at #12 USC
 TRANSP:OPAQUE
 UID:401858469-h2h@kevbowl.github.io
 URL:https://www.espn.com/college-football/game/_/gameId/401858469/oregon-us
  c
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:TV: SEC Network\n\nCalendar by Kevin Bowling\nhttp://kevinbowli
+ ng.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DTEND:20260927T024500Z
+DTSTAMP:20260920T211132Z
+DTSTART:20260926T234500Z
+LOCATION:Davis Wade Stadium\, Starkville\, MS\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #19 Missouri at #24 Mississippi St
+TRANSP:OPAQUE
+UID:401856703-h2h@kevbowl.github.io
+URL:https://www.espn.com/college-football/game/_/gameId/401856703/missouri-
+ mississippi-st
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261003T070000Z
-DTSTAMP:20260920T080120Z
+DTSTAMP:20260920T211132Z
 DTSTART:20261003T040000Z
 LOCATION:Kinnick Stadium\, Iowa City\, IA\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #6 Ohio State at #18 Iowa
+SUMMARY:🏈 #7 Ohio State at #17 Iowa
 TRANSP:OPAQUE
 UID:401858473-h2h@kevbowl.github.io
 URL:https://www.espn.com/college-football/game/_/gameId/401858473/ohio-stat
  e-iowa
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
+ take? Email me: hello@kevinbowling.me
+DTEND:20261003T070000Z
+DTSTAMP:20260920T211132Z
+DTSTART:20261003T040000Z
+LOCATION:Davis Wade Stadium\, Starkville\, MS\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #8 Alabama at #24 Mississippi St
+TRANSP:OPAQUE
+UID:401856707-h2h@kevbowl.github.io
+URL:https://www.espn.com/college-football/game/_/gameId/401856707/alabama-m
+ ississippi-st
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
+ take? Email me: hello@kevinbowling.me
+DTEND:20261003T070000Z
+DTSTAMP:20260920T211132Z
+DTSTART:20261003T040000Z
+LOCATION:Memorial Stadium\, Columbia\, MO\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:🏈 #21 Florida at #19 Missouri
+TRANSP:OPAQUE
+UID:401856708-h2h@kevbowl.github.io
+URL:https://www.espn.com/college-football/game/_/gameId/401856708/florida-m
+ issouri
 END:VEVENT
 END:VCALENDAR
