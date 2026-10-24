@@ -6,11 +6,11 @@ VERSION:2.0
 X-WR-CALDESC:Top 25 NCAA Football games (past 24 hours + next 3 weeks).
 X-WR-CALNAME:College Football Top 25
 BEGIN:VEVENT
-DESCRIPTION:TV: ESPN\; Disney+\n\n1st 14:05: 0-0\n\nCalendar by Kevin Bowli
+DESCRIPTION:TV: ESPN\; Disney+\n\n2nd 9:26: 0-17\n\nCalendar by Kevin Bowli
  ng\nhttp://kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling
  .me
 DTEND:20261024T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T160000Z
 LOCATION:Hard Rock Stadium\, Miami Gardens\, FL\, USA
 SEQUENCE:0
@@ -20,10 +20,10 @@ TRANSP:OPAQUE
 UID:401858274@kevbowl.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: Fox\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
- nFind a mistake? Email me: hello@kevinbowling.me
+DESCRIPTION:TV: Fox\n\n2nd 9:31: 6-0\n\nCalendar by Kevin Bowling\nhttp://k
+ evinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T160000Z
 LOCATION:Michigan Stadium\, Ann Arbor\, MI\, USA
 SEQUENCE:0
@@ -31,14 +31,12 @@ STATUS:CONFIRMED
 SUMMARY:🏈 #6 Indiana at Michigan
 TRANSP:OPAQUE
 UID:401858496@kevbowl.github.io
-URL:https://www.espn.com/college-football/game/_/gameId/401858496/indiana-m
- ichigan
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: FS1\n\n1st 12:07: 0-0\n\nCalendar by Kevin Bowling\nhttp://
- kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
+DESCRIPTION:TV: FS1\n\n2nd 9:07: 6-3\n\nCalendar by Kevin Bowling\nhttp://k
+ evinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T160000Z
 LOCATION:Nippert Stadium\, Cincinnati\, OH\, USA
 SEQUENCE:0
@@ -48,10 +46,10 @@ TRANSP:OPAQUE
 UID:401856840@kevbowl.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\n1st 14:55: 0-0\n\nCalendar by Kevin Bowling\nhttp://
+DESCRIPTION:TV: ABC\n\n2nd 9:48: 17-3\n\nCalendar by Kevin Bowling\nhttp://
  kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T160000Z
 LOCATION:Jordan-Hare Stadium\, Auburn\, AL\, USA
 SEQUENCE:0
@@ -61,10 +59,10 @@ TRANSP:OPAQUE
 UID:401856728@kevbowl.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: CW\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\n
- Find a mistake? Email me: hello@kevinbowling.me
+DESCRIPTION:TV: CW\n\n2nd 10:46: 14-10\n\nCalendar by Kevin Bowling\nhttp:/
+ /kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T160000Z
 LOCATION:Gerald J. Ford Stadium\, Dallas\, TX\, USA
 SEQUENCE:0
@@ -72,14 +70,12 @@ STATUS:CONFIRMED
 SUMMARY:🏈 California at #23 SMU
 TRANSP:OPAQUE
 UID:401858270@kevbowl.github.io
-URL:https://www.espn.com/college-football/game/_/gameId/401858270/californi
- a-smu
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: Peacock\n\n1st 14:05: 0-0\n\nCalendar by Kevin Bowling\nhtt
+DESCRIPTION:TV: Peacock\n\n2nd 9:44: 3-21\n\nCalendar by Kevin Bowling\nhtt
  p://kevinbowling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T160000Z
 LOCATION:Ryan Field\, Evanston\, IL\, USA
 SEQUENCE:0
@@ -92,7 +88,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: Fox\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T223000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T193000Z
 LOCATION:Acrisure Bounce House\, Orlando\, FL\, USA
 SEQUENCE:0
@@ -106,7 +102,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: CBS\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T223000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T193000Z
 LOCATION:Rose Bowl\, Pasadena\, CA\, USA
 SEQUENCE:0
@@ -121,7 +117,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN\; Disney+\n\nCalendar by Kevin Bowling\nhttp://kevinbo
  wling.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T223000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T193000Z
 LOCATION:Williams-Brice Stadium\, Columbia\, SC\, USA
 SEQUENCE:0
@@ -136,7 +132,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T223000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T193000Z
 LOCATION:Bryant-Denny Stadium\, Tuscaloosa\, AL\, USA
 SEQUENCE:0
@@ -151,7 +147,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: FS1\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261024T223000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T193000Z
 LOCATION:Huntington Bank Stadium\, Minneapolis\, MN\, USA
 SEQUENCE:0
@@ -166,7 +162,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: USA Net\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.m
  e\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261025T010000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T220000Z
 LOCATION:Martin Stadium\, Pullman\, WA\, USA
 SEQUENCE:0
@@ -181,7 +177,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261025T023000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T233000Z
 LOCATION:DKR-Texas Memorial Stadium\, Austin\, TX\, USA
 SEQUENCE:0
@@ -196,7 +192,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: SEC Network\n\nCalendar by Kevin Bowling\nhttp://kevinbowli
  ng.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261025T023000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T233000Z
 LOCATION:Kroger Field\, Lexington\, KY\, USA
 SEQUENCE:0
@@ -211,7 +207,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261025T023000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T233000Z
 LOCATION:Camp Randall Stadium\, Madison\, WI\, USA
 SEQUENCE:0
@@ -226,7 +222,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN2\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\
  n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261025T023000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261024T233000Z
 LOCATION:Casino Del Sol Stadium\, Tucson\, AZ\, USA
 SEQUENCE:0
@@ -241,7 +237,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
  \nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261025T051500Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261025T021500Z
 LOCATION:Rice-Eccles Stadium\, Salt Lake City\, UT\, USA
 SEQUENCE:0
@@ -256,7 +252,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261031T070000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T040000Z
 LOCATION:Autzen Stadium\, Eugene\, OR\, USA
 SEQUENCE:0
@@ -271,7 +267,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261031T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T160000Z
 LOCATION:Gillette Stadium\, Foxborough\, MA\, USA
 SEQUENCE:0
@@ -286,7 +282,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261031T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T160000Z
 LOCATION:Galaxy Stadium\, Lubbock\, TX\, USA
 SEQUENCE:0
@@ -301,7 +297,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: Fox\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261031T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T160000Z
 LOCATION:Kinnick Stadium\, Iowa City\, IA\, USA
 SEQUENCE:0
@@ -316,7 +312,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN2\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\
  n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261031T190000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T160000Z
 LOCATION:JMA Wireless Dome\, Syracuse\, NY\, USA
 SEQUENCE:0
@@ -331,7 +327,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: SEC Network\n\nCalendar by Kevin Bowling\nhttp://kevinbowli
  ng.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261031T194500Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T164500Z
 LOCATION:Vaught-Hemingway Stadium\, Oxford\, MS\, USA
 SEQUENCE:0
@@ -346,7 +342,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: Fox\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261031T223000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T193000Z
 LOCATION:LaVell Edwards Stadium\, Provo\, UT\, USA
 SEQUENCE:0
@@ -361,7 +357,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261031T223000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T193000Z
 LOCATION:Mercedes-Benz Stadium\, Atlanta\, GA\, USA
 SEQUENCE:0
@@ -376,7 +372,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: CBS\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261031T223000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T193000Z
 LOCATION:Memorial Stadium (Bloomington\, IN)\, Bloomington\, IN\, USA
 SEQUENCE:0
@@ -391,7 +387,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261031T224500Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T194500Z
 LOCATION:Nippert Stadium\, Cincinnati\, OH\, USA
 SEQUENCE:0
@@ -406,7 +402,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261031T224500Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T194500Z
 LOCATION:Allegacy Federal Credit Union Stadium\, Winston-Salem\, NC\, USA
 SEQUENCE:0
@@ -421,7 +417,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: BTN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261031T231500Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T201500Z
 LOCATION:Rose Bowl\, Pasadena\, CA\, USA
 SEQUENCE:0
@@ -436,7 +432,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261101T023000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T233000Z
 LOCATION:Kenan Stadium\, Chapel Hill\, NC\, USA
 SEQUENCE:0
@@ -451,7 +447,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261101T023000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T233000Z
 LOCATION:Los Angeles Memorial Coliseum\, Los Angeles\, CA\, USA
 SEQUENCE:0
@@ -466,7 +462,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261101T023000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T233000Z
 LOCATION:DKR-Texas Memorial Stadium\, Austin\, TX\, USA
 SEQUENCE:0
@@ -481,7 +477,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: SEC Network\n\nCalendar by Kevin Bowling\nhttp://kevinbowli
  ng.me\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261101T024500Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261031T234500Z
 LOCATION:Donald W. Reynolds Razorback Stadium\, Fayetteville\, AR\, USA
 SEQUENCE:0
@@ -496,7 +492,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: CW\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\n
  Find a mistake? Email me: hello@kevinbowling.me
 DTEND:20261101T050000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261101T020000Z
 LOCATION:Albertsons Stadium\, Boise\, ID\, USA
 SEQUENCE:0
@@ -511,7 +507,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
  \nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261107T030000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T000000Z
 LOCATION:Gerald J. Ford Stadium\, Dallas\, TX\, USA
 SEQUENCE:0
@@ -526,7 +522,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: ESPN\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n
  \nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261107T061500Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T031500Z
 LOCATION:Casino Del Sol Stadium\, Tucson\, AZ\, USA
 SEQUENCE:0
@@ -541,7 +537,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Rice-Eccles Stadium\, Salt Lake City\, UT\, USA
 SEQUENCE:0
@@ -555,7 +551,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Ohio Stadium\, Columbus\, OH\, USA
 SEQUENCE:0
@@ -570,7 +566,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Vaught-Hemingway Stadium\, Oxford\, MS\, USA
 SEQUENCE:0
@@ -585,7 +581,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Galaxy Stadium\, Lubbock\, TX\, USA
 SEQUENCE:0
@@ -600,7 +596,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Huntington Bank Stadium\, Minneapolis\, MN\, USA
 SEQUENCE:0
@@ -615,7 +611,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
 SEQUENCE:0
@@ -630,7 +626,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Tiger Stadium (LA)\, Baton Rouge\, LA\, USA
 SEQUENCE:0
@@ -645,7 +641,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:TDECU Stadium\, Houston\, TX\, USA
 SEQUENCE:0
@@ -660,7 +656,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Ryan Field\, Evanston\, IL\, USA
 SEQUENCE:0
@@ -675,7 +671,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Allegacy Federal Credit Union Stadium\, Winston-Salem\, NC\, USA
 SEQUENCE:0
@@ -690,7 +686,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Memorial Stadium\, Columbia\, MO\, USA
 SEQUENCE:0
@@ -705,7 +701,7 @@ BEGIN:VEVENT
 DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
  take? Email me: hello@kevinbowling.me
 DTEND:20261107T080000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T050000Z
 LOCATION:Ben Hill Griffin Stadium\, Gainesville\, FL\, USA
 SEQUENCE:0
@@ -720,7 +716,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: USA Net\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.m
  e\n\nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261108T020000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261107T230000Z
 LOCATION:Canvas Stadium\, Fort Collins\, CO\, USA
 SEQUENCE:0
@@ -735,7 +731,7 @@ BEGIN:VEVENT
 DESCRIPTION:TV: NBC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261108T033000Z
-DTSTAMP:20261024T161049Z
+DTSTAMP:20261024T170913Z
 DTSTART:20261108T003000Z
 LOCATION:Notre Dame Stadium\, Notre Dame\, IN\, USA
 SEQUENCE:0
