@@ -9,53 +9,38 @@ X-WR-CALNAME:College Football Top25 H2H
 BEGIN:VEVENT
 DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20261121T233000Z
-DTSTAMP:20261118T013029Z
-DTSTART:20261121T203000Z
-LOCATION:Neyland Stadium\, Knoxville\, TN\, USA
-SEQUENCE:0
-STATUS:CONFIRMED
-SUMMARY:🏈 #21 LSU at #8 Tennessee
-TRANSP:OPAQUE
-UID:401856754-h2h@kevbowl.github.io
-URL:https://www.espn.com/college-football/game/_/gameId/401856754/lsu-tenne
- ssee
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:TV: ABC\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
- nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261122T033000Z
-DTSTAMP:20261118T013029Z
+DTSTAMP:20261119T010148Z
 DTSTART:20261122T003000Z
 LOCATION:Williams-Brice Stadium\, Columbia\, SC\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #1 Georgia at #17 South Carolina
+SUMMARY:🏈 #1 Georgia at #21 South Carolina
 TRANSP:OPAQUE
 UID:401856753-h2h@kevbowl.github.io
 URL:https://www.espn.com/college-football/game/_/gameId/401856753/georgia-s
  outh-carolina
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:TV: SEC Network\n\nCalendar by Kevin Bowling\nhttp://kevinbowli
- ng.me\n\nFind a mistake? Email me: hello@kevinbowling.me
-DTEND:20261122T033000Z
-DTSTAMP:20261118T013029Z
-DTSTART:20261122T003000Z
-LOCATION:Memorial Stadium\, Columbia\, MO\, USA
+DESCRIPTION:Calendar by Kevin Bowling\nhttp://kevinbowling.me\n\nFind a mis
+ take? Email me: hello@kevinbowling.me
+DTEND:20261128T080000Z
+DTSTAMP:20261119T010148Z
+DTSTART:20261128T050000Z
+LOCATION:Kroger Field\, Lexington\, KY\, USA
 SEQUENCE:0
 STATUS:CONFIRMED
-SUMMARY:🏈 #11 Kentucky at #22 Missouri
+SUMMARY:🏈 #23 Louisville at #16 Kentucky
 TRANSP:OPAQUE
-UID:401856751-h2h@kevbowl.github.io
-URL:https://www.espn.com/college-football/game/_/gameId/401856751/kentucky-
- missouri
+UID:401856761-h2h@kevbowl.github.io
+URL:https://www.espn.com/college-football/game/_/gameId/401856761/louisvill
+ e-kentucky
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:TV: CBS\n\nCalendar by Kevin Bowling\nhttp://kevinbowling.me\n\
  nFind a mistake? Email me: hello@kevinbowling.me
 DTEND:20261128T233000Z
-DTSTAMP:20261118T013029Z
+DTSTAMP:20261119T010148Z
 DTSTART:20261128T203000Z
 LOCATION:Rose Bowl\, Pasadena\, CA\, USA
 SEQUENCE:0
